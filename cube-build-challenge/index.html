@@ -9,6 +9,7 @@
         h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; color: #2c3e50; }
         h2 { color: #2980b9; margin-top: 30px; }
         .footer { margin-top: 50px; font-size: 0.9em; color: #666; border-top: 1px solid #eee; padding-top: 20px; }
+        .note { background: #f4f8fb; border-left: 4px solid #2980b9; padding: 12px 16px; margin: 16px 0; }
         section { margin-bottom: 20px; }
     </style>
 </head>
@@ -16,13 +17,18 @@
     <h1>개인정보 처리방침 (Privacy Policy)</h1>
     <p>본 방침은 <strong>Cube Build Challenge</strong>(이하 "본 앱")의 개인정보 처리 방식을 설명합니다. 본 앱은 사용자의 개인정보를 소중하게 생각하며, 관련 법령을 준수합니다.</p>
 
+    <div class="note">
+        <p><strong>광고 및 이용 분석은 0.3.25 버전부터 적용됩니다.</strong> 그 이전 버전에는 광고와 분석 도구가 포함되어 있지 않습니다. 현재 이용 중인 버전은 앱 첫 화면 하단에서 확인하실 수 있습니다.</p>
+    </div>
+
     <section>
         <h2>1. 수집하는 정보</h2>
         <p>본 앱은 자체 계정 가입이 없으며 이름, 이메일, 전화번호 등 개인 식별 정보를 직접 수집하지 않습니다. 다만 아래 정보가 서비스 제공 과정에서 처리될 수 있습니다.</p>
         <ul>
             <li><strong>게임 설정 통신</strong>: 난이도 등 게임 설정값을 받아오기 위해 본 앱의 서버와 통신하며, 이 과정에서 IP 주소가 서버 로그에 일시적으로 기록될 수 있습니다. 이는 서비스 운영·보안 목적으로만 사용되며 개인 식별에 사용되지 않습니다. 퍼즐 자체는 이용자의 기기에서 생성되며 서버로 전송되지 않습니다.</li>
             <li><strong>Google Play 게임즈 서비스</strong>: 진행 상황 보관을 위해 Google Play 게임즈 서비스에 로그인하며, 이 과정에서 Google로부터 Play 게임즈 플레이어 정보를 전달받습니다. 자세한 내용은 아래 2항을 참고하시기 바랍니다.</li>
-            <li><strong>광고</strong>: 현재 본 앱은 광고를 표시하지 않으며, 광고 목적으로 광고 ID(AAID) 등을 수집하지 않습니다. 향후 광고를 도입하는 경우 해당 버전을 배포하기 전에 본 방침을 갱신하여 공지합니다.</li>
+            <li><strong>광고</strong>: Google AdMob을 통해 광고를 표시하며, 이 과정에서 <strong>광고 식별자(AAID)</strong>와 기기·네트워크 정보가 Google에 전달될 수 있습니다. 자세한 내용은 아래 5항을 참고하시기 바랍니다.</li>
+            <li><strong>이용 분석</strong>: Google Analytics for Firebase를 통해 화면 조회, 실행 횟수 등 <strong>익명 이용 통계</strong>와 오류 정보를 수집합니다. 자세한 내용은 아래 6항을 참고하시기 바랍니다.</li>
         </ul>
     </section>
 
@@ -46,21 +52,58 @@
 
     <section>
         <h2>4. 데이터 보유 및 파기</h2>
-        <p>서버 로그에 기록된 IP 주소는 운영·보안 목적 달성 후 지체 없이 파기됩니다. 기기에 저장된 게임 데이터는 앱을 삭제하면 함께 삭제됩니다. Google 계정에 저장된 게임 데이터는 Play 게임즈 앱에서 직접 삭제하실 수 있으며, 문의가 필요한 경우 아래 문의처로 연락해 주시기 바랍니다.</p>
+        <p>서버 로그에 기록된 IP 주소는 운영·보안 목적 달성 후 지체 없이 파기됩니다. 기기에 저장된 게임 데이터는 앱을 삭제하면 함께 삭제됩니다. Google 계정에 저장된 게임 데이터는 Play 게임즈 앱에서 직접 삭제하실 수 있습니다.</p>
+        <p>광고 및 분석 목적으로 Google에 전달된 데이터의 보유 기간과 처리 방식은 Google의 정책을 따릅니다. <a href="https://policies.google.com/technologies/partner-sites">Google의 파트너 사이트 데이터 이용 방침</a>을 참고하시기 바랍니다.</p>
     </section>
 
     <section>
-        <h2>5. 아동의 개인정보</h2>
+        <h2>5. 광고</h2>
+        <p>본 앱은 무료로 제공되며, 운영을 위해 Google AdMob 광고를 표시합니다. 광고는 게임 중간 화면의 하단 배너와, 판을 완료한 뒤 다음 판으로 넘어가는 시점에 표시됩니다. <strong>퍼즐을 푸는 도중에는 광고를 표시하지 않습니다.</strong></p>
+        <ul>
+            <li>광고 표시 과정에서 광고 식별자(AAID), 기기 종류, 대략적인 위치(국가·도시 수준), 앱 이용 정보 등이 Google 및 광고 파트너에게 전달될 수 있습니다.</li>
+            <li><strong>개인화 광고는 앱 내 설정에서 끄실 수 있습니다.</strong> 끄시면 관심사와 무관한 광고가 표시되며, 광고 자체는 계속 표시됩니다. 방법은 아래 7항을 참고하시기 바랍니다.</li>
+            <li>Google은 계정 정보상 <strong>만 18세 미만</strong>으로 확인되는 이용자에게 개인화 광고를 제공하지 않으며, 주류·도박 등 연령 제한 광고 카테고리도 차단합니다. 이는 본 앱의 설정과 무관하게 Google이 적용합니다.</li>
+            <li>본 앱은 광고 콘텐츠 등급을 제한하여 성인 대상(MA) 광고가 표시되지 않도록 설정하고 있습니다.</li>
+        </ul>
+        <p>유럽경제지역(EEA)·영국·스위스 이용자에게는 앱 최초 실행 시 <strong>Google 동의 관리 화면</strong>이 별도로 표시되며, 그 화면에서 선택한 내용이 광고 개인화에 적용됩니다. 이 화면은 앱 내 설정에서 다시 열 수 있습니다.</p>
+    </section>
+
+    <section>
+        <h2>6. 이용 분석</h2>
+        <p>본 앱은 Google Analytics for Firebase를 사용하여 어떤 기능이 실제로 이용되는지 파악하고 게임을 개선합니다.</p>
+        <ul>
+            <li>수집 항목: 앱 실행·화면 조회 등 이용 이벤트, 앱 버전, 기기 종류, 대략적인 지역, 앱 인스턴스 식별자</li>
+            <li><strong>이용자가 직접 입력한 내용이나 게임 기록의 구체적 내용은 수집하지 않습니다.</strong></li>
+            <li>수집된 정보는 통계 목적으로만 이용하며, 개별 이용자를 식별하는 데 사용하지 않습니다.</li>
+            <li><strong>이용 분석은 앱 내 설정에서 끄실 수 있습니다.</strong> 방법은 아래 7항을 참고하시기 바랍니다.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. 동의 철회 및 설정 변경</h2>
+        <p>이용자는 앱 내 <strong>중간 화면(판과 판 사이) 우측 상단의 톱니바퀴 아이콘 → "개인정보 및 데이터"</strong> 화면에서 아래 항목을 <strong>언제든지 직접 끄실 수 있습니다.</strong> 설정은 즉시 반영되며, 끄시더라도 앱 이용에는 아무런 제한이 없습니다.</p>
+        <ul>
+            <li><strong>개인화 광고</strong> — 끄시면 이용자의 관심사와 무관한 광고가 표시됩니다(광고 자체는 계속 표시됩니다).</li>
+            <li><strong>지원 및 분석</strong> — 끄시면 이용 통계와 오류 보고 전송이 중단됩니다.</li>
+        </ul>
+        <p>유럽경제지역·영국·스위스 이용자에게는 같은 화면에 <strong>"광고 개인정보 옵션"</strong> 버튼이 함께 표시되며, 이를 통해 Google 동의 관리 화면을 다시 열 수 있습니다.</p>
+        <p>이 밖에 기기 설정에서도 거부하실 수 있습니다. <strong>설정 → Google → 광고</strong>에서 광고 ID를 재설정하거나 맞춤 광고를 해제하시면 됩니다.</p>
+    </section>
+
+    <section>
+        <h2>8. 아동의 개인정보</h2>
         <p>본 앱은 만 13세 미만 아동을 대상으로 하지 않으며, 아동의 개인정보를 고의로 수집하지 않습니다.</p>
+        <p>대한민국 개인정보 보호법은 만 14세 미만 아동의 개인정보를 처리할 때 법정대리인의 동의를 받도록 정하고 있습니다. <strong>만 14세 미만 이용자께서는 보호자와 함께 위 7항의 방법으로 개인화 광고와 이용 분석을 꺼주시기 바랍니다.</strong></p>
+        <p>또한 앞서 5항에 적은 대로, Google은 계정 정보상 만 18세 미만으로 확인되는 이용자에게 개인화 광고를 제공하지 않습니다.</p>
     </section>
 
     <section>
-        <h2>6. 방침의 변경</h2>
+        <h2>9. 방침의 변경</h2>
         <p>본 방침이 변경되는 경우 이 페이지를 통해 공지합니다.</p>
     </section>
 
     <section>
-        <h2>7. 문의사항</h2>
+        <h2>10. 문의사항</h2>
         <p>개인정보 처리방침과 관련하여 문의사항이 있으시면 아래로 연락해 주시기 바랍니다.</p>
         <p>이메일: <a href="mailto:kangmunsu.dev@gmail.com">kangmunsu.dev@gmail.com</a></p>
     </section>
@@ -71,12 +114,17 @@
     <section>
         <p>This policy explains how <strong>Cube Build Challenge</strong> (the "App") handles your information.</p>
 
+        <div class="note">
+            <p><strong>Advertising and analytics apply from version 0.3.25 onward.</strong> Earlier versions contain neither. You can see which version you are running at the bottom of the App's first screen.</p>
+        </div>
+
         <h2>1. Information We Process</h2>
         <p>The App has no account system of its own and does not directly collect personally identifiable information such as name, email, or phone number. The following may be processed while providing the service:</p>
         <ul>
             <li><strong>Game configuration</strong>: The App contacts our server to fetch game configuration values such as difficulty settings. Your IP address may be temporarily recorded in server logs for operations and security only. Puzzles themselves are generated on your device and are not sent to our server.</li>
             <li><strong>Google Play Games Services</strong>: The App signs in to Google Play Games Services so your progress can be backed up. See section 2 below.</li>
-            <li><strong>Advertising</strong>: The App currently shows no ads and does not collect an advertising ID (AAID) for advertising purposes. If ads are introduced later, this policy will be updated before that version is released.</li>
+            <li><strong>Advertising</strong>: The App shows ads through Google AdMob. Your <strong>advertising ID (AAID)</strong> and device and network information may be shared with Google in the process. See section 5 below.</li>
+            <li><strong>Analytics</strong>: The App uses Google Analytics for Firebase to collect <strong>anonymous usage statistics</strong> such as screen views and launches, along with error information. See section 6 below.</li>
         </ul>
 
         <h2>2. Google Play Games Services and Cloud Save</h2>
@@ -94,17 +142,51 @@
         <p>Game progress (unlocks, clear records, the puzzle in progress) is stored on your device. If you are signed in to Play Games Services, it is also stored in your Google account as described in section 2. <strong>We do not store game progress on our own server.</strong></p>
 
         <h2>4. Data Retention</h2>
-        <p>IP addresses in server logs are deleted once they are no longer needed for operations and security. Game data stored on your device is removed when you uninstall the App. Game data in your Google account can be deleted from the Play Games app; contact us at the address below if you need help.</p>
+        <p>IP addresses in server logs are deleted once they are no longer needed for operations and security. Game data stored on your device is removed when you uninstall the App. Game data in your Google account can be deleted from the Play Games app.</p>
+        <p>Data shared with Google for advertising and analytics is retained and handled under Google's policies. See <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>.</p>
 
-        <h2>5. Children's Privacy</h2>
+        <h2>5. Advertising</h2>
+        <p>The App is free and shows Google AdMob ads to support its operation. Ads appear as a banner at the bottom of the between-stages screen and when you move on after finishing a stage. <strong>No ads are shown while you are solving a puzzle.</strong></p>
+        <ul>
+            <li>Serving ads may share your advertising ID (AAID), device type, approximate location (country or city level), and app usage information with Google and its advertising partners.</li>
+            <li><strong>You can turn off personalized ads in the App's settings.</strong> Ads still appear, but they are no longer based on your interests. See section 7.</li>
+            <li>Google does not serve personalized ads to users its account information indicates are <strong>under 18</strong>, and blocks age-restricted ad categories such as alcohol and gambling. Google applies this regardless of the App's own settings.</li>
+            <li>The App limits ad content rating so that mature (MA) ads are not shown.</li>
+        </ul>
+        <p>Users in the European Economic Area, the United Kingdom and Switzerland are shown a separate <strong>Google consent screen</strong> the first time the App runs, and the choices made there govern ad personalization. That screen can be reopened from the App's settings.</p>
+
+        <h2>6. Analytics</h2>
+        <p>The App uses Google Analytics for Firebase to understand which features are actually used, so the game can be improved.</p>
+        <ul>
+            <li>Collected: usage events such as launches and screen views, app version, device type, approximate region, and an app instance identifier.</li>
+            <li><strong>Content you type, and the specifics of your game records, are not collected.</strong></li>
+            <li>The information is used for statistics only and not to identify individual users.</li>
+            <li><strong>You can turn analytics off in the App's settings.</strong> See section 7.</li>
+        </ul>
+
+        <h2>7. Withdrawing Consent and Changing Settings</h2>
+        <p>In the App, open the <strong>gear icon at the top right of the between-stages screen → "Privacy &amp; Data"</strong> to turn the following off <strong>at any time</strong>. Changes take effect immediately, and nothing in the App is restricted if you turn them off.</p>
+        <ul>
+            <li><strong>Personalized ads</strong> — ads are no longer based on your interests (ads still appear).</li>
+            <li><strong>Support &amp; analytics</strong> — usage statistics and crash reports stop being sent.</li>
+        </ul>
+        <p>For users in the EEA, the UK and Switzerland, the same screen also shows an <strong>"Ad privacy options"</strong> button that reopens the Google consent screen.</p>
+        <p>You can also opt out from your device: <strong>Settings → Google → Ads</strong> lets you reset your advertising ID or opt out of ad personalization.</p>
+
+        <h2>8. Children's Privacy</h2>
         <p>The App is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+        <p>Korean law requires guardian consent to process the personal information of children under 14. <strong>Users under 14 should turn off personalized ads and analytics with a guardian, using the steps in section 7.</strong></p>
+        <p>As noted in section 5, Google also withholds personalized ads from users its account information indicates are under 18.</p>
 
-        <h2>6. Contact</h2>
+        <h2>9. Changes to This Policy</h2>
+        <p>Any changes to this policy will be posted on this page.</p>
+
+        <h2>10. Contact</h2>
         <p>If you have any questions about this policy, contact us at <a href="mailto:kangmunsu.dev@gmail.com">kangmunsu.dev@gmail.com</a>.</p>
     </section>
 
     <div class="footer">
-        <p>최종 수정일 / Last updated: 2026년 7월 26일 (July 26, 2026)</p>
+        <p>최종 수정일 / Last updated: 2026년 8월 4일 (August 4, 2026)</p>
         <p>&copy; 2026 Cube Build Challenge. All rights reserved.</p>
     </div>
 </body>
