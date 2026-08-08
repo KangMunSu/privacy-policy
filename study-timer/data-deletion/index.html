@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timer - 데이터 삭제 요청 (Data Deletion Request)</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; color: #2c3e50; }
+        h2 { color: #2980b9; margin-top: 30px; }
+        .footer { margin-top: 50px; font-size: 0.9em; color: #666; border-top: 1px solid #eee; padding-top: 20px; }
+        section { margin-bottom: 20px; }
+        .updated { color: #666; font-size: 0.95em; }
+        hr { margin: 50px 0; border: 0; border-top: 1px solid #eee; }
+        table { border-collapse: collapse; width: 100%; margin: 10px 0; }
+        th, td { border: 1px solid #e2e8f0; padding: 8px 10px; text-align: left; vertical-align: top; }
+        th { background: #f8fafc; }
+        code { background: #f5f5f5; padding: 1px 5px; border-radius: 3px; }
+    </style>
+</head>
+<body>
+    <h1>데이터 삭제 요청 (Data Deletion Request)</h1>
+    <p>본 안내는 <strong>Study Timer</strong>(패키지명 <code>com.kangmunsu.studytimer</code>, 제공자 <strong>하루스튜디오</strong>)의 데이터 삭제 방법을 설명합니다.</p>
+    <p class="updated">최종 갱신: 2026년 8월 8일</p>
+
+    <section>
+        <h2>1. 현재 계정 기능이 없습니다</h2>
+        <p>Study Timer는 <strong>회원가입·로그인 기능이 없으며, 이용자를 식별하는 계정을 만들지 않습니다.</strong>
+           공부 기록, 과목, 메모, 시험 일정과 성적은 <strong>이용자의 기기 안에만 저장</strong>되며 개발자의 서버로 전송되지 않습니다.</p>
+        <p>따라서 현재 삭제할 서버 측 계정 데이터가 존재하지 않으며, 아래 2번의 방법으로 이용자가 직접 전부 삭제할 수 있습니다.</p>
+    </section>
+
+    <section>
+        <h2>2. 삭제 방법</h2>
+        <table>
+            <tr><th>삭제 범위</th><th>방법</th></tr>
+            <tr>
+                <td><strong>일부 데이터</strong><br>(공부 기록·과목·시험 등 개별 항목)</td>
+                <td>앱 화면에서 해당 항목을 직접 삭제합니다.</td>
+            </tr>
+            <tr>
+                <td><strong>전체 데이터</strong></td>
+                <td><strong>앱을 삭제(제거)하면 기기에 저장된 모든 데이터가 함께 삭제됩니다.</strong>
+                    개발자는 이를 별도로 보관하지 않으므로 복구할 수 없습니다.</td>
+            </tr>
+            <tr>
+                <td><strong>계정 및 서버 데이터</strong><br>(계정 기능 도입 후)</td>
+                <td>앱의 <strong>설정 → 탈퇴하기</strong>에서 계정과 서버에 저장된 기록을 삭제할 수 있습니다.
+                    이 경우 기기에 저장된 기록도 함께 삭제되며 <strong>되돌릴 수 없습니다.</strong></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>3. 웹으로 삭제를 요청하는 방법</h2>
+        <p>앱을 이미 삭제하셨거나 앱 안에서 처리하기 어려운 경우, 아래 이메일로 요청해 주시기 바랍니다.</p>
+        <ul>
+            <li><strong>요청 주소</strong>: <a href="mailto:gmsgmso@gmail.com?subject=%5BStudy%20Timer%5D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">gmsgmso@gmail.com</a></li>
+            <li><strong>제목</strong>: [Study Timer] 데이터 삭제 요청</li>
+            <li><strong>본문에 적어 주실 것</strong>: 삭제를 원하는 범위(전체 또는 일부). 계정 기능 도입 후에는 가입에 사용하신 이메일 주소를 함께 적어 주시면 본인 확인에 사용합니다.</li>
+            <li><strong>처리 기한</strong>: 요청을 받은 날로부터 <strong>영업일 기준 7일 이내</strong>에 처리 결과를 회신합니다.</li>
+        </ul>
+        <p>본인 확인을 위해 요청하신 이메일 주소 외의 개인정보를 추가로 요구하지 않습니다.</p>
+    </section>
+
+    <section>
+        <h2>4. 이미 Google로 전송된 정보</h2>
+        <p>본 앱은 이용 분석(Firebase Analytics), 오류 진단(Firebase Crashlytics), 광고(Google AdMob)를 위해 일부 정보를 Google로 전송합니다.
+           여기에는 이용자가 입력한 <strong>과목명·메모·시험명·성적 값이 포함되지 않습니다.</strong></p>
+        <ul>
+            <li>이 정보의 보관 기간과 삭제는 <strong>Google의 정책과 절차</strong>를 따릅니다.</li>
+            <li>기기의 <strong>설정 → Google → 광고</strong>에서 광고 ID를 삭제하거나 재설정하면 광고 식별자와의 연결을 끊을 수 있습니다.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. 보관되는 정보</h2>
+        <p>앱 설정값을 내려받는 서버(<code>api.sagage1234.com</code>)의 접속 기록에는
+           <strong>IP 주소 등 이용자를 식별할 수 있는 정보가 포함되지 않습니다.</strong>
+           따라서 삭제 요청과 관련하여 개발자가 보관하는 개인정보는 없습니다.</p>
+    </section>
+
+    <div class="footer">
+        <p>개인정보 보호책임자: 강문수 · 하루스튜디오<br>
+           문의: <a href="mailto:gmsgmso@gmail.com">gmsgmso@gmail.com</a></p>
+        <p>전체 개인정보 처리방침:
+           <a href="https://southern-income-b6c.notion.site/Privacy-Policy-312df980aa2c80e2a65ff894137a24b7">처리방침 보기</a></p>
+    </div>
+
+    <hr>
+
+    <h1>Data Deletion Request (English)</h1>
+    <p>This page explains how to delete your data for <strong>Study Timer</strong>
+       (package <code>com.kangmunsu.studytimer</code>, provided by <strong>Haru Studio</strong>).</p>
+    <p class="updated">Last updated: August 8, 2026</p>
+
+    <section>
+        <h2>1. There is currently no account</h2>
+        <p>Study Timer has <strong>no sign-up or login feature and does not create an account that identifies you.</strong>
+           Your study records, subjects, notes, exam schedules, and scores are <strong>stored only on your device</strong>
+           and are not transmitted to the developer's server.</p>
+        <p>There is therefore no server-side account data to delete at this time, and you can delete everything yourself
+           using the methods in section 2.</p>
+    </section>
+
+    <section>
+        <h2>2. How to delete</h2>
+        <table>
+            <tr><th>Scope</th><th>How</th></tr>
+            <tr>
+                <td><strong>Partial</strong><br>(individual study sessions, subjects, exams)</td>
+                <td>Delete the item directly in the app.</td>
+            </tr>
+            <tr>
+                <td><strong>All data</strong></td>
+                <td><strong>Uninstalling the app deletes all data stored on your device.</strong>
+                    The developer keeps no separate copy, so it cannot be recovered.</td>
+            </tr>
+            <tr>
+                <td><strong>Account and server data</strong><br>(once accounts are introduced)</td>
+                <td>Use <strong>Settings → Delete account</strong> in the app to delete your account and the records
+                    stored on the server. Your on-device records are deleted as well, and this
+                    <strong>cannot be undone.</strong></td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>3. Requesting deletion from the web</h2>
+        <p>If you have already uninstalled the app, or cannot complete the request inside the app, please email us.</p>
+        <ul>
+            <li><strong>Send to</strong>: <a href="mailto:gmsgmso@gmail.com?subject=%5BStudy%20Timer%5D%20Data%20Deletion%20Request">gmsgmso@gmail.com</a></li>
+            <li><strong>Subject</strong>: [Study Timer] Data Deletion Request</li>
+            <li><strong>Please include</strong>: the scope you want deleted (all or partial). Once accounts are
+                introduced, include the email address you signed up with so we can verify the request.</li>
+            <li><strong>Response time</strong>: we will respond within <strong>7 business days</strong> of receiving your request.</li>
+        </ul>
+        <p>We will not ask for any personal information beyond the email address you contact us from.</p>
+    </section>
+
+    <section>
+        <h2>4. Information already sent to Google</h2>
+        <p>The app sends limited information to Google for usage analytics (Firebase Analytics), crash diagnostics
+           (Firebase Crashlytics), and advertising (Google AdMob). This
+           <strong>does not include the subject names, notes, exam names, or score values you enter.</strong></p>
+        <ul>
+            <li>Retention and deletion of that information follow <strong>Google's own policies and procedures</strong>.</li>
+            <li>You can break the link to your advertising identifier by deleting or resetting your advertising ID in
+                your device's <strong>Settings → Google → Ads</strong>.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. What is retained</h2>
+        <p>The access logs of the configuration server (<code>api.sagage1234.com</code>) contain
+           <strong>no IP address or other information that could identify you.</strong>
+           The developer therefore retains no personal information in connection with a deletion request.</p>
+    </section>
+
+    <div class="footer">
+        <p>Data protection officer: Kang Munsu · Haru Studio<br>
+           Contact: <a href="mailto:gmsgmso@gmail.com">gmsgmso@gmail.com</a></p>
+        <p>Full privacy policy:
+           <a href="https://southern-income-b6c.notion.site/Privacy-Policy-312df980aa2c80e2a65ff894137a24b7">View policy</a></p>
+    </div>
+</body>
+</html>
