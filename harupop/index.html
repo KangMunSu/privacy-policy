@@ -21,23 +21,26 @@
 
     <div class="note">
         <p><strong>광고, 이용 분석, 오류 보고 및 Google Play Games 로그인은 0.16.5 버전부터 적용됩니다.</strong> 이전 버전에는 이러한 기능이 포함되어 있지 않습니다.</p>
+        <p><strong>가명 처리된 서버 진행 통계는 해당 기능이 포함되는 0.16.9 버전부터 적용됩니다.</strong></p>
     </div>
 
     <section>
         <h2>1. 처리하는 정보</h2>
-        <p>본 앱은 자체 회원가입 기능이 없으며 이름, 이메일 주소, 전화번호를 직접 요구하거나 자체 서버에 사용자 계정을 저장하지 않습니다. 다만 다음 정보가 서비스 제공 과정에서 Google에 전송되어 처리될 수 있습니다.</p>
+        <p>본 앱은 자체 회원가입 기능이 없으며 이름, 이메일 주소 또는 전화번호를 직접 요구하지 않습니다. 다만 다음 정보가 서비스 제공 과정에서 Google 또는 Haru Studio가 운영하는 서버에 전송되어 처리될 수 있습니다.</p>
         <ul>
             <li><strong>Google AdMob</strong>: 광고 식별자(AAID), IP 주소, 기기·운영체제·앱 정보, 광고 상호작용 정보, 대략적인 위치 정보</li>
             <li><strong>Google Analytics for Firebase</strong>: 앱 실행 및 스테이지 시작·클리어·막힘 이벤트, 스테이지 번호, 앱 버전, 기기 정보, 앱 인스턴스 식별자, 대략적인 지역</li>
             <li><strong>Firebase Crashlytics</strong>: 비정상 종료 로그, 진단 정보, 앱·기기·운영체제 정보 및 오류 분석에 필요한 식별자</li>
             <li><strong>Google Play Games Services</strong>: 기존 Google Play Games 프로필을 이용한 로그인 정보, 플레이어 식별자, 게이머 태그 및 프로필 아바타. 본 앱은 로그인 성공 여부만 앱 실행 중에 사용하며, 이 정보를 자체 서버에 저장하지 않습니다.</li>
+            <li><strong>Haru Studio 진행 통계 서버</strong>: 앱이 생성한 무작위 진행 식별자, 클리어한 스테이지의 영구 ID와 번호, 누적 클리어 스테이지 수, 기록 시각 및 앱 버전. Google Play Games 플레이어 ID, 게이머 태그, 이름, 이메일 주소 또는 광고 식별자는 진행 통계에 저장하지 않습니다.</li>
         </ul>
         <p>본 앱은 정확한 위치, 연락처, 사진, 마이크 또는 카메라 권한을 요청하지 않습니다.</p>
     </section>
 
     <section>
-        <h2>2. 기기에 저장되는 게임 데이터</h2>
-        <p>게임 진행 상황, 설정, 현재 판과 플레이 기록은 이용자의 기기에 저장됩니다. 이 정보는 앱의 핵심 기능을 제공하기 위한 것이며 Haru Studio의 서버로 전송되지 않습니다. 기기의 앱 데이터 삭제 또는 앱 제거를 통해 삭제할 수 있습니다.</p>
+        <h2>2. 게임 진행 데이터</h2>
+        <p>게임 진행 상황, 설정, 현재 판과 플레이 기록은 이용자의 기기에 저장됩니다. 기기 내 데이터는 기기의 앱 데이터 삭제 또는 앱 제거를 통해 삭제할 수 있습니다.</p>
+        <p><strong>지원 및 분석</strong>이 켜져 있으면 스테이지를 클리어할 때 위에 적은 최소 진행 통계가 Haru Studio 서버로 전송됩니다. 이 통계는 개인을 직접 식별하지 않는 무작위 진행 식별자로 구분하며, 스테이지별 이용 현황과 난이도를 파악하고 게임을 개선하는 데 사용합니다. 설정을 끄면 이후 진행 통계 전송이 중단되며 게임 이용에는 제한이 없습니다.</p>
     </section>
 
     <section>
@@ -60,23 +63,24 @@
 
     <section>
         <h2>5. 이용 분석 및 오류 보고</h2>
-        <p>본 앱은 게임 개선과 안정성 확보를 위해 Google Analytics for Firebase 및 Firebase Crashlytics를 사용합니다. 분석 이벤트에는 자유 입력 내용이나 카드 배열의 구체적인 내용이 포함되지 않습니다.</p>
-        <p>앱 내 <strong>설정 → 개인정보 및 데이터 → 지원 및 분석</strong>을 끄면 이후의 분석 이벤트 및 오류 보고 전송이 중단됩니다. 설정을 끄더라도 게임 이용에는 제한이 없습니다.</p>
+        <p>본 앱은 게임 개선과 안정성 확보를 위해 Google Analytics for Firebase, Firebase Crashlytics 및 Haru Studio 진행 통계 서버를 사용합니다. 분석 이벤트와 진행 통계에는 자유 입력 내용이나 카드 배열의 구체적인 내용이 포함되지 않습니다.</p>
+        <p>앱 내 <strong>설정 → 개인정보 및 데이터 → 지원 및 분석</strong>을 끄면 이후의 분석 이벤트, 오류 보고 및 서버 진행 통계 전송이 중단됩니다. 설정을 끄더라도 게임 이용에는 제한이 없습니다.</p>
     </section>
 
     <section>
         <h2>6. 처리 목적, 제공 및 국외 처리</h2>
-        <p>정보는 광고 제공 및 측정, 앱 이용 통계, 오류 진단, 서비스 보안, Google Play Games 인증을 위해 처리됩니다. 본 앱은 위 목적을 위해 Google LLC의 SDK를 사용하며, 데이터는 Google 및 그 서비스 제공업체가 운영하는 해외 서버에서 처리될 수 있습니다. Google의 보유 기간과 삭제 방식은 Google 개인정보처리방침 및 각 서비스 정책을 따릅니다.</p>
-        <p>Haru Studio는 사용자 데이터를 판매하지 않으며 자체 광고·분석 서버에 저장하지 않습니다.</p>
+        <p>정보는 광고 제공 및 측정, 앱 이용 통계, 스테이지 난이도 개선, 오류 진단, 서비스 보안 및 Google Play Games 인증을 위해 처리됩니다. 본 앱은 위 목적을 위해 Google LLC의 SDK와 Haru Studio가 운영하는 진행 통계 서버를 사용하며, 데이터는 대한민국 외 지역의 서버에서 처리될 수 있습니다. Google이 처리하는 정보의 보유 기간과 삭제 방식은 Google 개인정보처리방침 및 각 서비스 정책을 따릅니다.</p>
+        <p>Haru Studio는 사용자 데이터를 판매하지 않으며 진행 통계를 광고 사업자에게 제공하거나 광고 식별자와 결합하지 않습니다. 서버 진행 통계는 마지막 활동일부터 24개월 동안 보관한 뒤 삭제하거나 익명 집계 형태로만 남깁니다.</p>
     </section>
 
     <section class="request" id="data-deletion">
         <h2>7. 데이터 열람 및 삭제 요청</h2>
         <p><strong>앱 내 설정 → 개인정보 및 데이터 → 내 데이터 요청</strong>을 누르거나 아래 이메일 링크를 이용하여 열람 또는 삭제를 요청할 수 있습니다.</p>
         <p><a href="mailto:kangmunsu.dev@gmail.com?subject=Harupop%20data%20deletion%20request"><strong>Harupop 데이터 삭제 요청 이메일 보내기</strong></a></p>
-        <p>요청 이메일에 요청 유형(열람/삭제), 앱 버전 및 사용 플랫폼을 적어 주십시오. 필요한 경우 요청 대상 데이터를 확인하기 위한 추가 정보를 안내하며, 확인 가능한 범위의 데이터를 삭제하거나 해당 서비스에서 직접 삭제하는 방법을 제공합니다.</p>
+        <p>요청 이메일에 요청 유형(열람/삭제), 앱 버전, 사용 플랫폼 및 앱 설정에 표시되는 진행 식별자를 적어 주십시오. 진행 식별자가 없는 버전에서는 해당 항목을 생략할 수 있습니다. 필요한 경우 요청 대상 데이터를 확인하기 위한 추가 정보를 안내하며, 확인 가능한 범위의 데이터를 삭제하거나 해당 서비스에서 직접 삭제하는 방법을 제공합니다.</p>
         <ul>
             <li><strong>기기 내 게임 데이터</strong>: 기기의 앱 정보에서 저장공간 삭제 또는 앱 제거 시 즉시 삭제됩니다.</li>
+            <li><strong>서버 진행 통계</strong>: 앱 제거만으로는 자동 삭제되지 않습니다. 진행 식별자를 포함해 이메일로 삭제를 요청하면 확인 후 관련 원본 기록을 삭제하거나 복원할 수 없는 익명 집계로 전환합니다.</li>
             <li><strong>Google Play Games 데이터</strong>: 이용자가 Google Play Games 프로필 및 데이터 관리 페이지에서 게임별로 직접 삭제할 수 있습니다.</li>
             <li><strong>광고·분석·오류 데이터</strong>: Google이 각 서비스 정책에 따라 보유·삭제합니다. Haru Studio가 요청을 처리할 수 있는 식별 정보가 제공된 경우 가능한 범위에서 삭제 요청을 처리합니다.</li>
             <li><strong>보관 데이터</strong>: 법적 의무, 보안 또는 부정 이용 방지를 위해 보관이 필요한 정보가 있다면 해당 목적과 법정 기간에 한해 보관한 뒤 삭제합니다.</li>
@@ -85,7 +89,7 @@
 
     <section>
         <h2>8. 데이터 보안</h2>
-        <p>외부 서비스로 전송되는 데이터는 HTTPS/TLS로 암호화됩니다. 기기에 저장되는 게임 데이터는 Android의 앱별 저장소 격리 기능으로 보호됩니다.</p>
+        <p>외부 서비스와 Haru Studio 진행 통계 서버로 전송되는 데이터는 HTTPS/TLS로 암호화됩니다. 기기에 저장되는 게임 데이터는 Android의 앱별 저장소 격리 기능으로 보호되며, 서버 진행 통계에는 접근 권한을 제한합니다.</p>
     </section>
 
     <section>
@@ -101,6 +105,7 @@
             <li><strong>개발자에게 문의하기</strong> 또는 <strong>내 데이터 요청</strong>을 누르면 기기의 메일 앱에 이용자가 수정할 수 있는 메일 초안이 열립니다. 앱 버전, 플랫폼, 기기 모델 또는 운영체제 정보가 초안에 포함될 수 있습니다.</li>
             <li>본 앱은 메일을 자동으로 전송하지 않습니다. 이용자가 직접 전송한 경우에만 메일 내용과 발신자 이메일 주소가 이용자의 메일 서비스 및 Haru Studio에 전달됩니다.</li>
         </ul>
+        <p><strong>개정 이력:</strong> 2026년 8월 24일 — 가명 처리된 스테이지 진행 통계의 수집 항목, 목적, 보유 기간 및 삭제 절차 추가</p>
         <p><strong>개정 이력:</strong> 2026년 8월 23일 — 0.16.5 버전의 AdMob, UMP, Firebase Analytics/Crashlytics, Google Play Games 로그인 및 데이터 삭제 요청 절차 반영</p>
     </section>
 
@@ -111,23 +116,26 @@
 
     <div class="note">
         <p><strong>Advertising, analytics, crash reporting, and Google Play Games sign-in apply from version 0.16.5 onward.</strong> Earlier versions do not contain these features.</p>
+        <p><strong>Pseudonymous server-side progress analytics apply from version 0.16.9, which introduces that feature.</strong></p>
     </div>
 
     <section>
         <h2>1. Information Processed</h2>
-        <p>The App has no account system of its own and does not directly request your name, email address, or phone number or store user accounts on a Haru Studio server. The following information may be sent to and processed by Google while providing the service:</p>
+        <p>The App has no account system of its own and does not directly request your name, email address, or phone number. The following information may be sent to and processed by Google or a server operated by Haru Studio while providing the service:</p>
         <ul>
             <li><strong>Google AdMob</strong>: advertising ID (AAID), IP address, device, operating system and app information, ad interactions, and approximate location.</li>
             <li><strong>Google Analytics for Firebase</strong>: app launches; stage start, clear and stuck events; stage number; app version; device information; app instance identifier; and approximate region.</li>
             <li><strong>Firebase Crashlytics</strong>: crash logs, diagnostics, app, device and operating system information, and identifiers needed for error analysis.</li>
             <li><strong>Google Play Games Services</strong>: sign-in information, player identifier, gamer tag, and profile avatar associated with an existing Google Play Games profile. The App uses only the sign-in result during the app session and does not store this information on a Haru Studio server.</li>
+            <li><strong>Haru Studio progress analytics server</strong>: a random progress identifier generated by the App; the permanent ID and number of a cleared stage; cumulative number of cleared stages; record time; and App version. Google Play Games player IDs, gamer tags, names, email addresses, and advertising IDs are not stored with progress analytics.</li>
         </ul>
         <p>The App does not request precise location, contacts, photos, microphone, or camera permissions.</p>
     </section>
 
     <section>
-        <h2>2. Game Data Stored on Your Device</h2>
-        <p>Game progress, preferences, the current board, and play records are stored on your device. They provide core game functionality and are not sent to a Haru Studio server. You can delete them by clearing the App’s storage or uninstalling the App.</p>
+        <h2>2. Game Progress Data</h2>
+        <p>Game progress, preferences, the current board, and play records are stored on your device. You can delete on-device data by clearing the App’s storage or uninstalling the App.</p>
+        <p>When <strong>Support &amp; analytics</strong> is enabled, the minimum progress analytics described above is sent to a Haru Studio server when you clear a stage. It is associated only with a random progress identifier that does not directly identify you and is used to understand stage usage and difficulty and improve the game. Turning the setting off stops future progress analytics without restricting gameplay.</p>
     </section>
 
     <section>
@@ -150,23 +158,24 @@
 
     <section>
         <h2>5. Analytics and Crash Reporting</h2>
-        <p>The App uses Google Analytics for Firebase and Firebase Crashlytics to improve the game and diagnose stability problems. Analytics events do not include free-form user input or the detailed contents of card layouts.</p>
-        <p>Turn off <strong>Settings → Privacy &amp; Data → Support &amp; analytics</strong> to stop future analytics events and crash reports. Turning it off does not restrict use of the game.</p>
+        <p>The App uses Google Analytics for Firebase, Firebase Crashlytics, and a Haru Studio progress analytics server to improve the game and diagnose stability problems. Analytics events and progress analytics do not include free-form user input or the detailed contents of card layouts.</p>
+        <p>Turn off <strong>Settings → Privacy &amp; Data → Support &amp; analytics</strong> to stop future analytics events, crash reports, and server-side progress analytics. Turning it off does not restrict use of the game.</p>
     </section>
 
     <section>
         <h2>6. Purposes, Service Providers, and International Processing</h2>
-        <p>Information is processed for ad delivery and measurement, app analytics, error diagnosis, service security, and Google Play Games authentication. The App uses SDKs provided by Google LLC, and data may be processed on servers operated by Google and its service providers outside your country. Google’s privacy policy and service-specific policies govern its retention and deletion practices.</p>
-        <p>Haru Studio does not sell user data and does not store it on its own advertising or analytics server.</p>
+        <p>Information is processed for ad delivery and measurement, app analytics, stage difficulty improvements, error diagnosis, service security, and Google Play Games authentication. The App uses SDKs provided by Google LLC and a progress analytics server operated by Haru Studio. Data may be processed on servers outside your country. Google’s privacy policy and service-specific policies govern information processed by Google.</p>
+        <p>Haru Studio does not sell user data, disclose progress analytics to advertising providers, or combine it with advertising IDs. Server-side progress analytics is retained for 24 months after the last activity, then deleted or retained only as anonymous aggregate statistics.</p>
     </section>
 
     <section class="request" id="data-deletion-en">
         <h2>7. Access and Data Deletion Requests</h2>
         <p>Open <strong>Settings → Privacy &amp; Data → My data request</strong> in the App, or use the email link below to request access or deletion.</p>
         <p><a href="mailto:kangmunsu.dev@gmail.com?subject=Harupop%20data%20deletion%20request"><strong>Send a Harupop data deletion request</strong></a></p>
-        <p>Include the request type (access/deletion), App version, and platform. If needed, we will explain what additional information is required to identify the relevant data, delete data within our control, or direct you to the relevant service’s deletion controls.</p>
+        <p>Include the request type (access/deletion), App version, platform, and the progress identifier shown in the App’s settings. You may omit the identifier if your App version does not have one. If needed, we will explain what additional information is required to identify the relevant data, delete data within our control, or direct you to the relevant service’s deletion controls.</p>
         <ul>
             <li><strong>On-device game data</strong>: deleted immediately when you clear the App’s storage or uninstall it.</li>
+            <li><strong>Server-side progress analytics</strong>: uninstalling the App does not automatically delete it. If you email a deletion request with the progress identifier, the associated raw records will be deleted after verification or converted into aggregates that cannot be linked back to the identifier.</li>
             <li><strong>Google Play Games data</strong>: can be deleted per game from the Google Play Games profile and data page.</li>
             <li><strong>Advertising, analytics, and crash data</strong>: retained and deleted under Google’s service policies. Where you provide identifiers that let Haru Studio process a request, we will do so to the extent available.</li>
             <li><strong>Retained data</strong>: if any information must be kept for legal obligations, security, or fraud prevention, it will be retained only for that purpose and required period, then deleted.</li>
@@ -175,7 +184,7 @@
 
     <section>
         <h2>8. Security</h2>
-        <p>Data sent to external services is encrypted in transit using HTTPS/TLS. Game data stored on the device is protected by Android app storage isolation.</p>
+        <p>Data sent to external services and the Haru Studio progress analytics server is encrypted in transit using HTTPS/TLS. Game data stored on the device is protected by Android app storage isolation, and access to server-side progress analytics is restricted.</p>
     </section>
 
     <section>
@@ -191,11 +200,12 @@
             <li><strong>Contact developer</strong> and <strong>My data request</strong> open an editable draft in your mail app. The draft may include the App version, platform, device model, or operating system information.</li>
             <li>The App never sends email automatically. The email contents and sender address are disclosed to your email provider and Haru Studio only if you choose to send the draft.</li>
         </ul>
+        <p><strong>Revision history:</strong> August 24, 2026 — Added the data fields, purposes, retention period, and deletion process for pseudonymous stage progress analytics.</p>
         <p><strong>Revision history:</strong> August 23, 2026 — Added AdMob, UMP, Firebase Analytics/Crashlytics, Google Play Games sign-in, and the data deletion request process for version 0.16.5.</p>
     </section>
 
     <div class="footer">
-        <p>시행일 / Effective date: 2026년 8월 23일 (August 23, 2026)</p>
+        <p>시행일 / Effective date: 2026년 8월 24일 (August 24, 2026)</p>
         <p>개발자 / Developer: Haru Studio</p>
         <p>문의 / Contact: <a href="mailto:kangmunsu.dev@gmail.com">kangmunsu.dev@gmail.com</a></p>
         <p><a href="../">← 다른 앱 개인정보 처리방침 / Other app privacy policies</a></p>
