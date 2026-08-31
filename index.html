@@ -1,38 +1,50 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개인정보 처리방침 모음 (Privacy Policies)</title>
-    <style>
-        body { font-family: -apple-system, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        h1 { border-bottom: 2px solid #eee; padding-bottom: 10px; color: #2c3e50; }
-        ul { font-size: 1.1em; }
-        li { margin-bottom: 10px; }
-        .footer { margin-top: 50px; font-size: 0.9em; color: #666; border-top: 1px solid #eee; padding-top: 20px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <title>Haru Studio games — Privacy Policies</title>
+  <style>
+    :root { color-scheme: light dark; --ink:#17212b; --muted:#5f6b76; --line:#d9e1e8; --card:#f5f8fa; --accent:#176b55; --bg:#fff; }
+    @media (prefers-color-scheme: dark) { :root { --ink:#edf4f1; --muted:#aebdb7; --line:#35443f; --card:#17231f; --accent:#79d8b5; --bg:#0d1512; } }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.65; }
+    main { max-width:820px; margin:0 auto; padding:48px 20px 72px; }
+    h1 { margin:0 0 8px; font-size:clamp(2rem,6vw,3rem); line-height:1.15; }
+    h2 { margin-top:42px; font-size:1.35rem; }
+    p { color:var(--muted); }
+    ul { padding:0; list-style:none; display:grid; gap:12px; }
+    li { border:1px solid var(--line); background:var(--card); border-radius:14px; padding:16px 18px; }
+    a { color:var(--accent); font-weight:650; text-underline-offset:3px; }
+    .name { display:block; color:var(--ink); font-size:1.08rem; }
+    .meta { display:block; margin-top:3px; color:var(--muted); font-size:.92rem; }
+    footer { margin-top:52px; padding-top:22px; border-top:1px solid var(--line); color:var(--muted); }
+  </style>
 </head>
 <body>
-    <h1>개인정보 처리방침 (Privacy Policies)</h1>
-    <p>앱별 개인정보 처리방침 목록입니다. / Privacy policies for each app.</p>
+  <main>
+    <h1>Privacy policies</h1>
+    <p>Official privacy and data-deletion pages for apps provided by <strong>Haru Studio games</strong>.</p>
 
+    <h2>Apps</h2>
     <ul>
-        <li><a href="./cube-build-challenge/">Cube Build Challenge</a></li>
-        <li><a href="./harupop/">Harupop</a></li>
-        <li><a href="./realmwalker/">RealmWalker</a></li>
-        <!-- 새 앱 추가 시: <li><a href="./앱이름/">앱 이름</a></li> -->
-        <!-- Study Timer 처리방침 본문은 현재 Notion 페이지 사용 중(앱이 그 URL을 열고 있음), 이전 예정 -->
-        <li><a href="https://southern-income-b6c.notion.site/Privacy-Policy-312df980aa2c80e2a65ff894137a24b7">Study Timer</a> (Notion)</li>
+      <li>
+        <a class="name" href="./running-timer/">Running Timer — Walk &amp; Run Tracker</a>
+        <span class="meta"><a href="./running-timer/data-deletion/">Account &amp; data deletion</a></span>
+      </li>
+      <li><a class="name" href="./realmwalker/">RealmWalker</a></li>
+      <li><a class="name" href="./harupop/">Harupop</a></li>
+      <li><a class="name" href="./cube-build-challenge/">Cube Build Challenge</a></li>
+      <li>
+        <a class="name" href="https://southern-income-b6c.notion.site/Privacy-Policy-312df980aa2c80e2a65ff894137a24b7">Study Timer</a>
+        <span class="meta"><a href="./study-timer/data-deletion/">Data deletion</a></span>
+      </li>
     </ul>
 
-    <h1 style="margin-top:50px">데이터 삭제 요청 (Data Deletion)</h1>
-    <p>앱을 이미 삭제한 경우에도 데이터 삭제를 요청할 수 있습니다. / You can request deletion even after uninstalling.</p>
-    <ul>
-        <li><a href="./study-timer/data-deletion/">Study Timer — 데이터 삭제 요청</a></li>
-    </ul>
-
-    <div class="footer">
-        <p>문의 / Contact: <a href="mailto:kangmunsu.dev@gmail.com">kangmunsu.dev@gmail.com</a></p>
-    </div>
+    <footer>
+      Contact: <a href="mailto:kangmunsu.dev@gmail.com">kangmunsu.dev@gmail.com</a>
+    </footer>
+  </main>
 </body>
 </html>
