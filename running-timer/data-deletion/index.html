@@ -39,7 +39,7 @@
   <header id="top">
     <a href="../">Privacy Policy</a>
     <h1>Running Timer Account &amp; Data Deletion</h1>
-    <p class="meta">Walk &amp; Run Tracker · <code>net.harustudio.runningtimer</code> · Haru Studio games · Last updated August 31, 2026</p>
+    <p class="meta">Walk &amp; Run Tracker · <code>net.harustudio.runningtimer</code> · Haru Studio games · Policy version 2 · Last updated September 1, 2026</p>
     <nav aria-label="Deletion page languages">
       <a href="#english">English</a>
       <a href="#korean" lang="ko">한국어</a>
@@ -60,23 +60,23 @@
       <table>
         <thead><tr><th>Scope</th><th>What is deleted</th><th>How</th></tr></thead>
         <tbody>
-          <tr><td>One local activity</td><td>Activity details and all associated GPS route points; grass and statistics are recalculated</td><td>Delete the activity from its detail screen in the App</td></tr>
+          <tr><td>One local activity</td><td>Activity details and all associated GPS route points; grass and statistics are recalculated. If account sync is enabled, its encrypted server summary is deleted on the next successful sync</td><td>Delete the activity from its detail screen in the App</td></tr>
           <tr><td>All local data</td><td>Activities, raw routes, recovery state, grass/statistics, pending summaries, and local consent state</td><td>Android Settings → Apps → Running Timer → Storage → Clear storage, or uninstall the App</td></tr>
           <tr><td>Leave leaderboard</td><td>Running Timer leaderboard consent and all Running Timer daily totals on the Haru Studio server; public rank contribution is removed</td><td>Settings → Leaderboard → Leave leaderboard, when the optional account feature is enabled</td></tr>
-          <tr><td>Delete app account</td><td>Running Timer account linkage, Firebase authentication user, consent, daily totals, and associated public rank contribution</td><td>Settings → Privacy &amp; data → Delete account, when the optional account feature is enabled, or use the email request below</td></tr>
+          <tr><td>Delete app account and server backup</td><td>Running Timer account linkage, Firebase authentication user, account-sync and leaderboard consents, encrypted activity summaries, sync history, daily leaderboard totals, and associated public rank contribution</td><td>Settings → Backup &amp; sync → Delete account &amp; server backup, when optional account sync is enabled, or use the email request below</td></tr>
         </tbody>
       </table>
-      <p>Deleting a Running Timer app account does not delete your Google Account or data belonging to other Google services. Local GPS data is never uploaded to our server and therefore cannot be erased remotely; clear App storage or uninstall on each device that contains it. Android cloud backup is disabled, so App data is not restored through Android Auto Backup.</p>
+      <p>Deleting a Running Timer app account does not delete your Google Account or data belonging to other Google services. It also does not delete activities or raw GPS routes stored on the device where you make the request. Local GPS data is never uploaded to our server and cannot be erased remotely; clear App storage or uninstall on each device that contains it. Conversely, clearing storage or uninstalling alone does not delete an optional server account or encrypted summary backup, so delete the app account first or use the email request. Android cloud backup is disabled, so App data is not restored through Android Auto Backup.</p>
 
       <h3>2. Current in-app availability</h3>
       <div class="note">
-        <strong>Google sign-in and account creation are not currently exposed in the App UI.</strong> Before a release enables leaderboard sign-in, it must also provide the in-app “Leave leaderboard” and “Delete account” paths described above. The external email request on this page is available now.
+        <strong>The current release configuration keeps Google sign-in and account sync disabled.</strong> The in-app account deletion path is implemented and will be exposed together with optional sync only after the privacy, server, and Google Play declarations are ready. A release enabling leaderboard participation must also provide the separate “Leave leaderboard” path. The external email request on this page is available now.
       </div>
 
       <h3>3. Request deletion from the web</h3>
       <ol>
         <li>Email <a href="mailto:kangmunsu.dev@gmail.com?subject=%5BRunning%20Timer%5D%20Account%20and%20Data%20Deletion%20Request">kangmunsu.dev@gmail.com</a> with the subject <strong>[Running Timer] Account and Data Deletion Request</strong>.</li>
-        <li>State whether you want to <strong>leave the leaderboard</strong> or <strong>delete the Running Timer app account and associated server data</strong>.</li>
+        <li>State whether you want to <strong>leave the leaderboard</strong> or <strong>delete the Running Timer app account, encrypted activity-summary backup, and all associated server data</strong>.</li>
         <li>Send from the Google email used to sign in when possible, or include that email address so we can locate and verify the account. You may include the anonymous leaderboard code if available.</li>
         <li>Do not send your Google password, Firebase token, screenshots containing tokens, or GPS route coordinates. We will never ask for them.</li>
       </ol>
@@ -84,7 +84,8 @@
 
       <h3>4. What remains after deletion</h3>
       <ul>
-        <li>Our active systems retain no Running Timer leaderboard totals, consent record, or public-code association for the deleted account.</li>
+        <li>Our active systems retain no Running Timer account linkage, encrypted activity summary, sync history, leaderboard total, consent record, or public-code association for the deleted account.</li>
+        <li>Deleted Haru Studio server records may remain in access-restricted encrypted disaster-recovery backups until the configured retention expires, currently within 7 days. They are not used for normal service operation.</li>
         <li>Firebase Authentication states that logged IP addresses are retained for a few weeks and that, after we initiate user deletion, other authentication information is removed from live and backup systems within 180 days.</li>
         <li>Information processed independently by Google Maps or other Google services follows Google's controls and policies. Deleting the Running Timer account does not delete a Google Account.</li>
         <li>We may retain only information that applicable law strictly requires, or limited evidence needed for security, fraud prevention, dispute resolution, or compliance. If this applies to your request, we will tell you the category and reason.</li>
@@ -102,23 +103,23 @@
       <table>
         <thead><tr><th>범위</th><th>삭제되는 정보</th><th>방법</th></tr></thead>
         <tbody>
-          <tr><td>로컬 활동 하나</td><td>활동 상세와 연결된 모든 GPS 경로 좌표를 삭제하고 잔디와 통계를 다시 계산</td><td>앱의 활동 상세 화면에서 해당 활동 삭제</td></tr>
+          <tr><td>로컬 활동 하나</td><td>활동 상세와 연결된 모든 GPS 경로 좌표를 삭제하고 잔디와 통계를 다시 계산. 계정 동기화를 사용 중이면 다음 동기화 성공 때 암호화된 서버 요약도 삭제</td><td>앱의 활동 상세 화면에서 해당 활동 삭제</td></tr>
           <tr><td>모든 로컬 데이터</td><td>활동, 원본 경로, 복구 상태, 잔디·통계, 전송 대기 요약과 로컬 동의 상태</td><td>Android 설정 → 앱 → Running Timer → 저장공간 → 저장공간 지우기 또는 앱 제거</td></tr>
           <tr><td>리더보드 참여 종료</td><td>Haru Studio 서버의 Running Timer 리더보드 동의와 모든 일간 합계를 삭제하고 공개 순위 기여 제거</td><td>선택형 계정 기능 활성화 후 설정 → 리더보드 → 리더보드 참여 종료</td></tr>
-          <tr><td>앱 계정 삭제</td><td>Running Timer 계정 연결, Firebase 인증 사용자, 동의, 일간 합계와 연결된 공개 순위 기여</td><td>선택형 계정 기능 활성화 후 설정 → 개인정보 및 데이터 → 계정 삭제 또는 아래 이메일 요청</td></tr>
+          <tr><td>앱 계정 및 서버 백업 삭제</td><td>Running Timer 계정 연결, Firebase 인증 사용자, 계정 동기화·리더보드 동의, 암호화된 활동 요약, 동기화 이력, 리더보드 일간 합계와 연결된 공개 순위 기여</td><td>선택형 계정 동기화 활성화 후 설정 → 백업 및 동기화 → 계정 및 서버 백업 삭제 또는 아래 이메일 요청</td></tr>
         </tbody>
       </table>
-      <p>Running Timer 앱 계정을 삭제해도 Google 계정이나 다른 Google 서비스의 데이터는 삭제되지 않습니다. 로컬 GPS 데이터는 당사 서버로 업로드되지 않으므로 원격으로 삭제할 수 없습니다. 데이터가 있는 각 기기에서 앱 저장공간을 지우거나 앱을 제거하십시오. Android 클라우드 백업을 꺼 두었으므로 Android Auto Backup으로 앱 데이터가 복원되지 않습니다.</p>
+      <p>Running Timer 앱 계정을 삭제해도 Google 계정이나 다른 Google 서비스의 데이터는 삭제되지 않습니다. 또한 요청한 기기에 저장된 활동과 원본 GPS 경로도 삭제하지 않습니다. 로컬 GPS 데이터는 당사 서버로 업로드되지 않아 원격으로 삭제할 수 없으므로 데이터가 있는 각 기기에서 앱 저장공간을 지우거나 앱을 제거하십시오. 반대로 저장공간 지우기나 앱 제거만으로는 선택형 서버 계정과 암호화 요약 백업이 삭제되지 않으므로 먼저 앱 계정을 삭제하거나 이메일로 요청하십시오. Android 클라우드 백업을 꺼 두었으므로 Android Auto Backup으로 앱 데이터가 복원되지 않습니다.</p>
 
       <h3>2. 현재 앱 내 기능 상태</h3>
       <div class="note">
-        <strong>현재 앱 UI에는 Google 로그인과 계정 생성이 노출되어 있지 않습니다.</strong> 리더보드 로그인을 활성화하는 출시본은 그 전에 위의 앱 내 “리더보드 참여 종료”와 “계정 삭제” 경로도 함께 제공해야 합니다. 이 페이지의 외부 이메일 요청은 지금 이용할 수 있습니다.
+        <strong>현재 출시 설정에서는 Google 로그인과 계정 동기화를 비활성화합니다.</strong> 앱 내 계정 삭제 경로는 구현됐으며 개인정보, 서버와 Google Play 신고가 준비된 뒤 선택형 동기화와 함께 노출합니다. 리더보드 참여를 활성화하는 출시본은 별도의 “리더보드 참여 종료” 경로도 제공해야 합니다. 이 페이지의 외부 이메일 요청은 지금 이용할 수 있습니다.
       </div>
 
       <h3>3. 웹에서 삭제 요청하기</h3>
       <ol>
         <li><a href="mailto:kangmunsu.dev@gmail.com?subject=%5BRunning%20Timer%5D%20Account%20and%20Data%20Deletion%20Request">kangmunsu.dev@gmail.com</a>으로 이메일을 보내고 제목을 <strong>[Running Timer] 계정 및 데이터 삭제 요청</strong>으로 작성합니다.</li>
-        <li><strong>리더보드 참여 종료</strong> 또는 <strong>Running Timer 앱 계정과 연결된 서버 데이터 삭제</strong> 중 원하는 범위를 적습니다.</li>
+        <li><strong>리더보드 참여 종료</strong> 또는 <strong>Running Timer 앱 계정, 암호화된 활동 요약 백업과 연결된 모든 서버 데이터 삭제</strong> 중 원하는 범위를 적습니다.</li>
         <li>가능하면 로그인에 사용한 Google 이메일에서 보내거나 해당 주소를 본문에 적어 계정을 찾고 확인할 수 있게 해 주십시오. 알고 있다면 익명 리더보드 코드를 함께 적어도 됩니다.</li>
         <li>Google 비밀번호, Firebase 토큰, 토큰이 보이는 화면, GPS 경로 좌표는 보내지 마십시오. 당사도 이를 요구하지 않습니다.</li>
       </ol>
@@ -126,7 +127,8 @@
 
       <h3>4. 삭제 후 남을 수 있는 정보</h3>
       <ul>
-        <li>당사의 활성 시스템에는 삭제한 계정의 Running Timer 리더보드 합계, 동의 기록 또는 공개 코드 연결이 남지 않습니다.</li>
+        <li>당사의 활성 시스템에는 삭제한 계정의 Running Timer 계정 연결, 암호화된 활동 요약, 동기화 이력, 리더보드 합계, 동의 기록 또는 공개 코드 연결이 남지 않습니다.</li>
+        <li>삭제된 Haru Studio 서버 기록은 설정된 보관 기간이 끝날 때까지 접근이 제한된 암호화 재해 복구 백업에 남을 수 있으며 현재 7일 이내에 만료됩니다. 일반 서비스 운영에는 사용하지 않습니다.</li>
         <li>Firebase Authentication은 기록한 IP 주소를 수 주간 보관하고, 당사가 사용자 삭제를 시작한 뒤 다른 인증 정보는 운영·백업 시스템에서 최대 180일 안에 제거한다고 밝힙니다.</li>
         <li>Google Maps나 다른 Google 서비스가 독립적으로 처리한 정보에는 Google의 관리 기능과 정책이 적용됩니다. Running Timer 계정 삭제는 Google 계정을 삭제하지 않습니다.</li>
         <li>적용 법률이 엄격하게 요구하거나 보안, 사기 방지, 분쟁 해결 또는 규정 준수에 필요한 최소한의 증빙만 보관할 수 있습니다. 해당되는 경우 범주와 이유를 안내합니다.</li>
@@ -143,23 +145,23 @@
       <table>
         <thead><tr><th>範囲</th><th>削除される情報</th><th>方法</th></tr></thead>
         <tbody>
-          <tr><td>ローカルの1件のアクティビティ</td><td>活動詳細と関連するすべてのGPSルートポイントを削除し、芝生と統計を再計算</td><td>本アプリの活動詳細画面から削除</td></tr>
+          <tr><td>ローカルの1件のアクティビティ</td><td>活動詳細と関連するすべてのGPSルートポイントを削除し、芝生と統計を再計算。アカウント同期を利用中の場合、次回の同期成功時に暗号化されたサーバー要約も削除</td><td>本アプリの活動詳細画面から削除</td></tr>
           <tr><td>すべてのローカルデータ</td><td>活動、生のルート、復旧状態、芝生・統計、送信待ち要約、ローカル同意状態</td><td>Android設定 → アプリ → Running Timer → ストレージ → ストレージを消去、または本アプリをアンインストール</td></tr>
           <tr><td>リーダーボードから退出</td><td>Haru Studioサーバー上のRunning Timerリーダーボード同意とすべての日次合計を削除し、公開順位への貢献を除去</td><td>任意のアカウント機能が有効になった後、設定 → リーダーボード → リーダーボードから退出</td></tr>
-          <tr><td>アプリアカウントを削除</td><td>Running Timerアカウント連携、Firebase認証ユーザー、同意、日次合計、関連する公開順位への貢献</td><td>任意のアカウント機能が有効になった後、設定 → プライバシーとデータ → アカウントを削除、または下記メール</td></tr>
+          <tr><td>アプリアカウントとサーバーバックアップを削除</td><td>Running Timerアカウント連携、Firebase認証ユーザー、アカウント同期・リーダーボード同意、暗号化されたアクティビティ要約、同期履歴、リーダーボード日次合計、関連する公開順位への貢献</td><td>任意のアカウント機能が有効になった後、設定 → バックアップと同期 → アカウントとサーバーバックアップを削除、または下記メール</td></tr>
         </tbody>
       </table>
-      <p>Running Timerのアプリアカウントを削除しても、Googleアカウントや他のGoogleサービスのデータは削除されません。ローカルGPSデータは当社サーバーにアップロードされないため、遠隔では削除できません。データがある各端末で本アプリのストレージを消去するか、本アプリをアンインストールしてください。Androidクラウドバックアップは無効であり、Android Auto Backupからアプリデータは復元されません。</p>
+      <p>Running Timerのアプリアカウントを削除しても、Googleアカウントや他のGoogleサービスのデータは削除されません。アカウントを削除しても、端末上のローカル活動と生のGPSルートは保持されます。ローカルGPSデータは当社サーバーにアップロードされないため、遠隔では削除できません。端末上のデータも削除するには、その端末で本アプリのストレージを消去するか、本アプリをアンインストールしてください。ストレージの消去やアンインストールだけでは任意のサーバーアカウントと暗号化バックアップは削除されないため、先にアプリ内の削除経路または下記メールを利用してください。Androidクラウドバックアップは無効であり、Android Auto Backupからアプリデータは復元されません。</p>
 
       <h3>2. 現在のアプリ内機能</h3>
       <div class="note">
-        <strong>現在、Googleログインとアカウント作成は本アプリのUIに公開されていません。</strong> リーダーボードログインを有効にするリリースでは、その前に上記のアプリ内「リーダーボードから退出」と「アカウントを削除」の経路も提供する必要があります。本ページの外部メールリクエストは現在利用できます。
+        <strong>現在のリリース設定では、Googleログインとアカウント同期は無効です。</strong> アプリ内のアカウントとサーバーバックアップ削除経路は実装済みで、プライバシー文書、サーバー、Google Play申告の準備が整ったリリースでのみ公開されます。リーダーボードを有効にする場合は、別途「リーダーボードから退出」経路も提供します。本ページの外部メールリクエストは現在利用できます。
       </div>
 
       <h3>3. ウェブから削除を依頼する方法</h3>
       <ol>
         <li><a href="mailto:kangmunsu.dev@gmail.com?subject=%5BRunning%20Timer%5D%20Account%20and%20Data%20Deletion%20Request">kangmunsu.dev@gmail.com</a>へ、件名を<strong>[Running Timer] アカウントとデータの削除依頼</strong>としてメールを送信します。</li>
-        <li><strong>リーダーボードから退出</strong>、または<strong>Running Timerのアプリアカウントと関連サーバーデータを削除</strong>のどちらを希望するか記載してください。</li>
+        <li><strong>リーダーボードから退出</strong>、または<strong>Running Timerのアプリアカウント、暗号化されたアクティビティ要約バックアップ、関連サーバーデータを削除</strong>のどちらを希望するか記載してください。</li>
         <li>可能であればログインに使用したGoogleメールから送信するか、そのメールアドレスを本文に記載して、アカウントの特定と確認ができるようにしてください。分かる場合は匿名リーダーボードコードも記載できます。</li>
         <li>Googleパスワード、Firebaseトークン、トークンが写った画面、GPSルート座標を送らないでください。当社もこれらを求めません。</li>
       </ol>
@@ -167,7 +169,8 @@
 
       <h3>4. 削除後に残る可能性がある情報</h3>
       <ul>
-        <li>当社の稼働中システムには、削除したアカウントのRunning Timerリーダーボード合計、同意記録、公開コードとの関連付けは残りません。</li>
+        <li>当社の稼働中システムには、削除したアカウントの暗号化されたアクティビティ要約、同期履歴、リーダーボード合計、同意記録、公開コードとの関連付けは残りません。</li>
+        <li>災害復旧用バックアップに残る削除済みデータは、現在7日以内に期限切れとなり、通常のサービス提供には使用されません。</li>
         <li>Firebase Authenticationは、記録したIPアドレスを数週間保持し、当社がユーザー削除を開始した後、その他の認証情報をライブおよびバックアップシステムから180日以内に削除すると説明しています。</li>
         <li>Google Mapsまたは他のGoogleサービスが独立して処理した情報には、Googleの管理機能とポリシーが適用されます。Running Timerアカウントの削除はGoogleアカウントを削除しません。</li>
         <li>適用法令が厳密に求める情報、またはセキュリティ、不正防止、紛争解決、法令順守に必要な最小限の証拠のみ保持する場合があります。該当する場合は、情報の区分と理由をお知らせします。</li>
