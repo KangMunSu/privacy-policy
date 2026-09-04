@@ -21,13 +21,12 @@
 <body>
     <h1>데이터 삭제 요청 (Data Deletion Request)</h1>
     <p>본 안내는 <strong>Study Timer</strong>(패키지명 <code>com.kangmunsu.studytimer</code>, 제공자 <strong>하루스튜디오</strong>)의 데이터 삭제 방법을 설명합니다.</p>
-    <p class="updated">최종 갱신: 2026년 8월 8일</p>
+    <p class="updated">최종 갱신: 2026년 9월 5일</p>
 
     <section>
-        <h2>1. 현재 계정 기능이 없습니다</h2>
-        <p>Study Timer는 <strong>회원가입·로그인 기능이 없으며, 이용자를 식별하는 계정을 만들지 않습니다.</strong>
-           공부 기록, 과목, 메모, 시험 일정과 성적은 <strong>이용자의 기기 안에만 저장</strong>되며 개발자의 서버로 전송되지 않습니다.</p>
-        <p>따라서 현재 삭제할 서버 측 계정 데이터가 존재하지 않으며, 아래 2번의 방법으로 이용자가 직접 전부 삭제할 수 있습니다.</p>
+        <h2>1. 선택형 Google 로그인과 동기화</h2>
+        <p>Study Timer의 타이머·통계 등 기본 기능은 회원가입이나 로그인 없이 사용할 수 있으며, 공부 기록은 먼저 이용자의 기기에 저장됩니다.</p>
+        <p>이용자가 별도로 동의하고 Google 로그인을 선택한 경우에만 동기화 계정이 생성되고, 계정 정보와 공부 기록이 서버에 백업되어 여러 기기 동기화와 새 기기 복원에 사용됩니다.</p>
     </section>
 
     <section>
@@ -39,14 +38,12 @@
                 <td>앱 화면에서 해당 항목을 직접 삭제합니다.</td>
             </tr>
             <tr>
-                <td><strong>전체 데이터</strong></td>
-                <td><strong>앱을 삭제(제거)하면 기기에 저장된 모든 데이터가 함께 삭제됩니다.</strong>
-                    개발자는 이를 별도로 보관하지 않으므로 복구할 수 없습니다.</td>
+                <td><strong>이 기기의 로컬 데이터</strong></td>
+                <td>Android 설정에서 Study Timer의 저장공간 데이터를 삭제하거나 앱을 제거합니다. 동기화 계정과 서버 백업은 이 방법으로 삭제되지 않습니다.</td>
             </tr>
             <tr>
-                <td><strong>계정 및 서버 데이터</strong><br>(계정 기능 도입 후)</td>
-                <td>앱의 <strong>설정 → 탈퇴하기</strong>에서 계정과 서버에 저장된 기록을 삭제할 수 있습니다.
-                    이 경우 기기에 저장된 기록도 함께 삭제되며 <strong>되돌릴 수 없습니다.</strong></td>
+                <td><strong>동기화 계정 및 서버 백업</strong></td>
+                <td>앱의 <strong>설정 → 백업 및 동기화 → 동기화 계정 삭제</strong>에서 서버 계정·인증 연결·서버에 백업된 공부 기록과 Firebase 사용자를 삭제하고 Google 연결을 해제할 수 있습니다. <strong>이 기기의 로컬 공부 기록은 삭제되지 않습니다.</strong></td>
             </tr>
         </table>
     </section>
@@ -57,10 +54,10 @@
         <ul>
             <li><strong>요청 주소</strong>: <a href="mailto:gmsgmso@gmail.com?subject=%5BStudy%20Timer%5D%20%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C%20%EC%9A%94%EC%B2%AD">gmsgmso@gmail.com</a></li>
             <li><strong>제목</strong>: [Study Timer] 데이터 삭제 요청</li>
-            <li><strong>본문에 적어 주실 것</strong>: 삭제를 원하는 범위(전체 또는 일부). 계정 기능 도입 후에는 가입에 사용하신 이메일 주소를 함께 적어 주시면 본인 확인에 사용합니다.</li>
+            <li><strong>본문에 적어 주실 것</strong>: 삭제를 원하는 범위와 Google 로그인에 사용한 이메일 주소. 이메일은 계정 확인과 삭제 요청 처리에만 사용합니다.</li>
             <li><strong>처리 기한</strong>: 요청을 받은 날로부터 <strong>영업일 기준 7일 이내</strong>에 처리 결과를 회신합니다.</li>
         </ul>
-        <p>본인 확인을 위해 요청하신 이메일 주소 외의 개인정보를 추가로 요구하지 않습니다.</p>
+        <p>웹 요청으로는 서버 계정과 서버 백업을 삭제할 수 있습니다. 개발자가 이용자의 기기에 직접 접근할 수 없으므로 기기의 로컬 기록은 이용자가 앱 또는 Android 설정에서 직접 삭제해야 합니다.</p>
     </section>
 
     <section>
@@ -75,9 +72,9 @@
 
     <section>
         <h2>5. 보관되는 정보</h2>
-        <p>앱 설정값을 내려받는 서버(<code>api.harustudio.net</code>)의 접속 기록에는
-           <strong>IP 주소 등 이용자를 식별할 수 있는 정보가 포함되지 않습니다.</strong>
-           따라서 삭제 요청과 관련하여 개발자가 보관하는 개인정보는 없습니다.</p>
+        <p>동기화 계정과 서버 백업은 계정을 삭제할 때까지 보관됩니다. 운영 DB에서 삭제된 정보가 암호화된 RDS 자동 백업에 최대 7일 남을 수 있으나 일반 서비스에서는 조회하거나 사용하지 않으며 보존기간 만료 후 자동 삭제됩니다.</p>
+        <p>앱 설정값을 내려받는 서버(<code>api.harustudio.net</code>)의 접속 기록에는 <strong>IP 주소 등 이용자를 식별할 수 있는 정보가 포함되지 않습니다.</strong></p>
+        <p>동기화 계정 삭제 후 다시 Google 로그인하고 동기화에 동의하면, 기기에 남아 있던 로컬 기록이 새 서버 계정에 다시 백업될 수 있습니다.</p>
     </section>
 
     <div class="footer">
@@ -92,15 +89,12 @@
     <h1>Data Deletion Request (English)</h1>
     <p>This page explains how to delete your data for <strong>Study Timer</strong>
        (package <code>com.kangmunsu.studytimer</code>, provided by <strong>Haru Studio</strong>).</p>
-    <p class="updated">Last updated: August 8, 2026</p>
+    <p class="updated">Last updated: September 5, 2026</p>
 
     <section>
-        <h2>1. There is currently no account</h2>
-        <p>Study Timer has <strong>no sign-up or login feature and does not create an account that identifies you.</strong>
-           Your study records, subjects, notes, exam schedules, and scores are <strong>stored only on your device</strong>
-           and are not transmitted to the developer's server.</p>
-        <p>There is therefore no server-side account data to delete at this time, and you can delete everything yourself
-           using the methods in section 2.</p>
+        <h2>1. Optional Google sign-in and sync</h2>
+        <p>Core features such as the timer and statistics are available without registration or sign-in, and study records are stored on your device first.</p>
+        <p>Only if you separately consent and choose Google sign-in does the App create a sync account and back up account information and study records to the server for multi-device sync and restoration on a new device.</p>
     </section>
 
     <section>
@@ -112,15 +106,12 @@
                 <td>Delete the item directly in the app.</td>
             </tr>
             <tr>
-                <td><strong>All data</strong></td>
-                <td><strong>Uninstalling the app deletes all data stored on your device.</strong>
-                    The developer keeps no separate copy, so it cannot be recovered.</td>
+                <td><strong>Local data on this device</strong></td>
+                <td>Clear Study Timer's storage data in Android settings or uninstall the App. This does not delete a sync account or server backup.</td>
             </tr>
             <tr>
-                <td><strong>Account and server data</strong><br>(once accounts are introduced)</td>
-                <td>Use <strong>Settings → Delete account</strong> in the app to delete your account and the records
-                    stored on the server. Your on-device records are deleted as well, and this
-                    <strong>cannot be undone.</strong></td>
+                <td><strong>Sync account and server backup</strong></td>
+                <td>Use <strong>Settings → Backup &amp; Sync → Delete sync account</strong> to delete the server account, authentication connection, study records backed up on the server and Firebase user, and to unlink Google. <strong>Local study records on this device are not deleted.</strong></td>
             </tr>
         </table>
     </section>
@@ -131,11 +122,10 @@
         <ul>
             <li><strong>Send to</strong>: <a href="mailto:gmsgmso@gmail.com?subject=%5BStudy%20Timer%5D%20Data%20Deletion%20Request">gmsgmso@gmail.com</a></li>
             <li><strong>Subject</strong>: [Study Timer] Data Deletion Request</li>
-            <li><strong>Please include</strong>: the scope you want deleted (all or partial). Once accounts are
-                introduced, include the email address you signed up with so we can verify the request.</li>
+            <li><strong>Please include</strong>: the scope you want deleted and the email address used for Google sign-in. The email is used only to verify the account and process the deletion request.</li>
             <li><strong>Response time</strong>: we will respond within <strong>7 business days</strong> of receiving your request.</li>
         </ul>
-        <p>We will not ask for any personal information beyond the email address you contact us from.</p>
+        <p>A web request can delete the server account and server backup. Because the developer cannot access your device, you must delete local records yourself in the App or Android settings.</p>
     </section>
 
     <section>
@@ -152,9 +142,9 @@
 
     <section>
         <h2>5. What is retained</h2>
-        <p>The access logs of the configuration server (<code>api.harustudio.net</code>) contain
-           <strong>no IP address or other information that could identify you.</strong>
-           The developer therefore retains no personal information in connection with a deletion request.</p>
+        <p>The sync account and server backup are retained until account deletion. Data deleted from the production database may remain in encrypted RDS automated backups for up to seven days, is not queried or used by the live service, and expires automatically.</p>
+        <p>Access logs for the configuration server (<code>api.harustudio.net</code>) do not contain <strong>IP addresses or other information that identifies users.</strong></p>
+        <p>If you sign in with Google again and consent to sync after deleting the sync account, local records remaining on the device may be backed up to a new server account.</p>
     </section>
 
     <div class="footer">
