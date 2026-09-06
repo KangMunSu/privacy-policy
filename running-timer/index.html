@@ -39,7 +39,7 @@
     <a href="../">All app policies</a>
     <h1>Running Timer Privacy Policy</h1>
     <p class="eyebrow">Walk &amp; Run Tracker · Android package <code>net.harustudio.runningtimer</code></p>
-    <p class="meta"><strong>Provider:</strong> Haru Studio games · <strong>Policy version:</strong> 3 · <strong>Effective and last updated:</strong> September 3, 2026</p>
+    <p class="meta"><strong>Provider:</strong> Haru Studio games · <strong>Policy version:</strong> 4 · <strong>Effective and last updated:</strong> September 6, 2026</p>
     <nav aria-label="Policy languages and related pages">
       <a href="#english">English</a>
       <a href="#korean" lang="ko">한국어</a>
@@ -56,7 +56,7 @@
       <h2>English</h2>
 
       <h3>1. Scope and your choices</h3>
-      <p>This policy explains how Haru Studio games ("we") handles information in Running Timer ("the App"). You can record activities, view routes, grass, history, and statistics without creating an account. Encrypted activity-summary backup and leaderboard contribution are optional online features. Account sync and leaderboard participation each require a separate notice and affirmative consent before Google sign-in begins; agreeing to one does not enable the other. In production builds where monetization is enabled, adults may also receive ads and may optionally buy permanent ad removal. Refusing or withdrawing optional consent, or not making a purchase, does not disable local activity features or public leaderboard viewing.</p>
+      <p>This policy explains how Haru Studio games ("we") handles information in Running Timer ("the App"). Only people aged 14 or older may use the App. You can record activities, view routes, grass, history, and statistics without creating an account. Encrypted activity-summary backup and leaderboard contribution are optional online features. Account sync and leaderboard participation each require a separate notice and affirmative consent before Google sign-in begins; agreeing to one does not enable the other. In production builds where monetization is enabled, eligible users may also receive ads and may optionally buy permanent ad removal. Refusing or withdrawing optional online-feature consent, or not making a purchase, does not disable local activity features or public leaderboard viewing.</p>
 
       <h3>2. Precise location and activity data stored on your device</h3>
       <p>When you explicitly start an activity, the App processes precise GPS location in the foreground and, if you grant background location permission, while the screen is off or the App is in the background. Background collection is limited to an ongoing user-started activity, is accompanied by Android's persistent foreground-service notification, and stops when you finish or discard the activity.</p>
@@ -92,12 +92,12 @@
       <p>Private activity summaries are encrypted before storage with a Running Timer-specific server key. A restored activity contains time, distance, grass, and statistics data but no route points or route map. Deleting an activity creates a summary-deletion request for later sync. Account sync and leaderboard participation remain independent.</p>
       <p>Only the most recently joined device contributes to the leaderboard for one account. Joining from another device resets that account's previous Running Timer leaderboard totals and prevents the old device from contributing. Public leaderboard viewing does not require sign-in; viewing your own rank and contributing do.</p>
 
-      <h3>5. Advertising consent and permanent ad removal</h3>
-      <p>Advertising and purchases are available only in production builds where those features are enabled. Before either SDK starts, the App asks whether the user is at least 18 years old and stores only the resulting eligibility choice on the device; it does not ask for or store a birth date or exact age. If the answer is under 18, unknown, or not yet given, the App does not call Google UMP, Google Mobile Ads, or RevenueCat. Core activity recording remains available.</p>
+      <h3>5. Advertising privacy choices and permanent ad removal</h3>
+      <p>Advertising and purchases are available only in production builds where those features are enabled. Before any monetization SDK starts, the App requires confirmation that the user is at least 14 years old and agreement to the Terms of Service and this Privacy Policy. It stores only the age-threshold confirmation, terms version, policy version, and agreement time on the device; it does not ask for or store a birth date or exact age. People under 14 cannot proceed into the App. Before the required confirmation is saved, the App does not call Google UMP, Google Mobile Ads, or RevenueCat.</p>
       <ul>
-        <li><strong>Google UMP and AdMob:</strong> for an eligible adult, UMP checks whether a privacy message or privacy-options entry point is required and stores the resulting consent choice. The App requests an ad only when UMP reports that ads may be requested. Google Mobile Ads may automatically collect or share the device IP address, general location inferred from IP, app launches and ad interactions such as taps or video views, diagnostic information, Android advertising ID, app set ID, and other applicable device or account identifiers for advertising, analytics, and fraud prevention. The ads shown may be personalized, non-personalized, or limited according to the user's choice and applicable law.</li>
-        <li><strong>When ads appear:</strong> the App never shows ads before an activity, while acquiring GPS, during an activity, or before saving it. It may attempt one interstitial only after an activity has been saved and its result has been shown, when the user chooses to return home and the configured frequency allows it. Policy version 3 does not use an app-open or splash-screen ad.</li>
-        <li><strong>RevenueCat and Google Play:</strong> an eligible adult may optionally buy or restore permanent ad removal. RevenueCat receives a randomly generated anonymous App User ID, product and offering information, entitlement state, purchase or restore events, store transaction data such as the product ID and purchase token, and routine network, app, device, and operating-system metadata needed to operate and prevent fraud. Running Timer configures RevenueCat without a Google/Firebase account ID and disables RevenueCat diagnostics and automatic device-identifier collection. It does not set email, advertising ID, attribution identifiers, or custom customer attributes. Google Play processes payment credentials; Running Timer and RevenueCat do not receive the full payment-card or bank-account details.</li>
+        <li><strong>Google UMP and AdMob:</strong> UMP checks whether a privacy message or privacy-options entry point is required for the user’s region and stores the resulting choice when applicable. It is not a separate global advertising opt-in screen. The App requests an ad only when UMP reports that ads may be requested. Google Mobile Ads may automatically collect or share the device IP address, general location inferred from IP, app launches and ad interactions such as taps or video views, diagnostic information, Android advertising ID, app set ID, and other applicable device or account identifiers for advertising, analytics, and fraud prevention. The ads shown may be personalized, non-personalized, or limited according to the user's choice, Google account signals and applicable law.</li>
+        <li><strong>When ads appear:</strong> the App never shows ads before an activity, while acquiring GPS, during an activity, or before saving it. It may attempt one interstitial only after an activity has been saved and its result has been shown, when the user chooses to return home and the configured frequency allows it. Policy version 4 does not use an app-open or splash-screen ad.</li>
+        <li><strong>RevenueCat and Google Play:</strong> an eligible user may optionally buy or restore permanent ad removal. RevenueCat receives a randomly generated anonymous App User ID, product and offering information, entitlement state, purchase or restore events, store transaction data such as the product ID and purchase token, and routine network, app, device, and operating-system metadata needed to operate and prevent fraud. Running Timer configures RevenueCat without a Google/Firebase account ID and disables RevenueCat diagnostics and automatic device-identifier collection. It does not set email, advertising ID, attribution identifiers, or custom customer attributes. Google Play processes payment credentials; Running Timer and RevenueCat do not receive the full payment-card or bank-account details.</li>
       </ul>
       <p>The App never sends raw GPS points, a route or polyline, start or end locations, addresses, map images, private activity summaries, leaderboard totals, Google profile information, Firebase UID, or Haru Studio account ID to UMP, AdMob, ad partners, RevenueCat, or Google Play as purchase metadata. You can change advertising choices from the visible privacy-options control when UMP requires it. Permanent ad removal is optional and can be restored using the explicit restore action.</p>
       <ul>
@@ -113,12 +113,12 @@
         <li><strong>Haru Studio API:</strong> <code>https://api.harustudio.net/runningtimer/v1</code>, for optional authentication, consent, encrypted activity-summary backup and restore, daily leaderboard summaries, rankings, and deletion.</li>
         <li><strong>GitHub Pages:</strong> hosts this policy. Opening this page in a browser may cause GitHub and your browser to process normal web access data; this is separate from the App.</li>
       </ul>
-      <p>Policy version 3 does not use Firebase Analytics, Firebase Crashlytics, or Health Connect. We do not sell personal data. If analytics, crash reporting, health integration, cloud backup of raw routes, or other processing is introduced, we will update this policy, the consent flow where required, and the Google Play Data safety declaration before enabling it for users.</p>
+      <p>Policy version 4 does not use Firebase Analytics, Firebase Crashlytics, or Health Connect. We do not sell personal data. If analytics, crash reporting, health integration, cloud backup of raw routes, or other processing is introduced, we will update this policy, the consent flow where required, and the Google Play Data safety declaration before enabling it for users.</p>
 
       <h3>7. Retention, deletion, and rights</h3>
       <ul>
         <li><strong>Local data:</strong> retained until you delete an activity, clear the App's storage, or uninstall the App. Deleting an activity also deletes its route points and recalculates grass and statistics.</li>
-        <li><strong>Local age eligibility:</strong> retained on the device until you change it, clear App storage, or uninstall. UMP consent choices remain under Google's consent controls until changed, reset, or expired.</li>
+        <li><strong>Local app-eligibility consent:</strong> the age-threshold confirmation, terms version, policy version, and agreement time remain on the device until App storage is cleared or the App is uninstalled. UMP choices remain under Google's consent controls until changed, reset, or expired.</li>
         <li><strong>Advertising data:</strong> retained by Google and applicable ad partners according to their policies, legal duties, consent, and controls. Resetting or deleting the Android advertising ID is available in Android settings on supported devices.</li>
         <li><strong>Purchase data:</strong> the anonymous RevenueCat customer and transaction or entitlement history are retained according to RevenueCat's and Google Play's policies and applicable legal, accounting, fraud-prevention, and contractual requirements. Deleting a Running Timer server account does not automatically delete independent Google Play purchase history or the anonymous purchase record needed to restore the entitlement. Contact us for a privacy request concerning data we control; Google provides its own purchase and account controls.</li>
         <li><strong>Private activity-summary backup:</strong> retained while account sync is enabled. A synced activity deletion removes its server summary; deleting the App account removes all remaining encrypted summaries and sync history from active systems.</li>
@@ -134,7 +134,7 @@
       <p>Google, RevenueCat, their providers, and the Haru Studio API may process data outside your country, including in the United States, under their applicable terms and safeguards. By choosing an optional online or monetization feature, you understand that cross-border processing may occur.</p>
 
       <h3>9. Children and age eligibility</h3>
-      <p>The App is not directed to children under 13 and we do not knowingly collect personal information from children. Users who indicate that they are under 18, or do not confirm adult eligibility, are kept out of the App's advertising-consent and purchase SDK flows. If you believe a child has provided account information, contact us so we can investigate and delete it.</p>
+      <p>Only people aged 14 or older may use the App. We do not provide an under-14 access process based on guardian consent and do not knowingly collect personal information from children under 14. A user cannot proceed until the required 14-or-older confirmation is given. If you believe a child has provided account information, contact us so we can investigate and delete it.</p>
 
       <h3>10. Changes and contact</h3>
       <p>Material changes will be posted here with a new effective date and policy version. A material change to account-sync or leaderboard purpose, data, visibility, retention, or device rules will require renewed consent for the affected feature. Advertising consent is managed through UMP where applicable.</p>
@@ -146,7 +146,7 @@
       <h2>한국어</h2>
 
       <h3>1. 적용 범위와 선택권</h3>
-      <p>이 방침은 Haru Studio games(이하 "당사")가 Running Timer(이하 "앱")에서 정보를 처리하는 방식을 설명합니다. 계정을 만들지 않아도 활동 기록, 경로, 잔디, 기록 내역과 통계를 이용할 수 있습니다. 암호화된 활동 요약 백업과 리더보드 기여는 선택형 온라인 기능입니다. 계정 동기화와 리더보드 참여는 각각 Google 로그인 전에 별도 고지와 명시적 동의를 받으며, 한쪽 동의가 다른 쪽을 활성화하지 않습니다. 수익화를 활성화한 프로덕션 빌드에서는 성인 이용자에게 광고가 표시될 수 있고 영구 광고 제거를 선택적으로 구매할 수 있습니다. 선택형 동의를 거부·철회하거나 구매하지 않아도 로컬 활동 기능과 공개 순위 조회는 계속 이용할 수 있습니다.</p>
+      <p>이 방침은 Haru Studio games(이하 "당사")가 Running Timer(이하 "앱")에서 정보를 처리하는 방식을 설명합니다. 앱은 만 14세 이상만 이용할 수 있습니다. 계정을 만들지 않아도 활동 기록, 경로, 잔디, 기록 내역과 통계를 이용할 수 있습니다. 암호화된 활동 요약 백업과 리더보드 기여는 선택형 온라인 기능입니다. 계정 동기화와 리더보드 참여는 각각 Google 로그인 전에 별도 고지와 명시적 동의를 받으며, 한쪽 동의가 다른 쪽을 활성화하지 않습니다. 수익화를 활성화한 프로덕션 빌드에서는 이용 자격을 확인한 사용자에게 광고가 표시될 수 있고 영구 광고 제거를 선택적으로 구매할 수 있습니다. 선택형 온라인 기능 동의를 거부·철회하거나 구매하지 않아도 로컬 활동 기능과 공개 순위 조회는 계속 이용할 수 있습니다.</p>
 
       <h3>2. 기기에 저장되는 정밀 위치 및 활동 데이터</h3>
       <p>사용자가 활동을 명시적으로 시작하면 앱은 포그라운드에서 정밀 GPS 위치를 처리합니다. 백그라운드 위치 권한을 허용한 경우에는 화면이 꺼지거나 앱이 백그라운드에 있는 동안에도 처리합니다. 백그라운드 수집은 사용자가 시작한 활동이 진행 중일 때만 이루어지고 Android의 지속적인 포그라운드 서비스 알림이 표시되며, 활동을 완료하거나 폐기하면 중단됩니다.</p>
@@ -182,12 +182,12 @@
       <p>개인 활동 요약은 Running Timer 전용 서버 키로 암호화해 저장합니다. 다른 기기로 복원한 활동에는 시간·거리·잔디·통계 정보만 있고 경로점과 경로 지도는 없습니다. 활동을 삭제하면 나중에 동기화할 요약 삭제 요청을 만듭니다. 계정 동기화와 리더보드 참여는 서로 독립적입니다.</p>
       <p>한 계정에서는 가장 최근에 참여한 기기 한 대만 리더보드에 기여합니다. 다른 기기에서 참여하면 해당 계정의 기존 Running Timer 리더보드 합계가 초기화되고 이전 기기의 기여는 차단됩니다. 공개 리더보드 조회는 로그인 없이 가능하지만 내 순위 조회와 기여에는 로그인이 필요합니다.</p>
 
-      <h3>5. 광고 동의와 영구 광고 제거</h3>
-      <p>광고와 구매는 해당 기능을 활성화한 프로덕션 빌드에서만 이용됩니다. 어느 SDK든 시작하기 전에 앱은 사용자가 만 18세 이상인지 묻고 그 결과인 이용 자격 선택값만 기기에 저장합니다. 생년월일이나 정확한 나이는 묻거나 저장하지 않습니다. 만 18세 미만, 알 수 없음 또는 아직 답하지 않은 경우 앱은 Google UMP, Google Mobile Ads와 RevenueCat을 호출하지 않으며 핵심 활동 기록은 계속 이용할 수 있습니다.</p>
+      <h3>5. 광고 개인정보 선택과 영구 광고 제거</h3>
+      <p>광고와 구매는 해당 기능을 활성화한 프로덕션 빌드에서만 이용됩니다. 수익화 SDK를 시작하기 전에 앱은 만 14세 이상 확인과 이용약관·이 개인정보처리방침 동의를 필수로 받습니다. 기기에는 만 14세 이상 확인, 약관 버전, 처리방침 버전과 동의 시각만 저장하며 생년월일이나 정확한 나이는 묻거나 저장하지 않습니다. 만 14세 미만은 앱에 진입할 수 없습니다. 필수 확인이 저장되기 전에는 Google UMP, Google Mobile Ads와 RevenueCat을 호출하지 않습니다.</p>
       <ul>
-        <li><strong>Google UMP와 AdMob:</strong> 성인 이용자의 경우 UMP는 개인정보 메시지나 개인정보 옵션 진입점이 필요한지 확인하고 동의 선택을 저장합니다. 앱은 UMP가 광고 요청을 허용할 때만 광고를 요청합니다. Google Mobile Ads는 광고, 분석과 부정행위 방지를 위해 기기 IP 주소, IP에서 추론한 대략적 위치, 앱 실행 및 탭·동영상 조회 같은 광고 상호작용, 진단정보, Android 광고 ID, 앱 세트 ID와 해당되는 다른 기기·계정 식별자를 자동으로 수집하거나 공유할 수 있습니다. 광고는 이용자의 선택과 적용 법률에 따라 개인 맞춤, 비개인 맞춤 또는 제한된 광고일 수 있습니다.</li>
-        <li><strong>광고 표시 시점:</strong> 앱은 활동 시작 전, GPS 획득 중, 활동 기록 중 또는 활동 저장 전에는 광고를 표시하지 않습니다. 활동을 먼저 저장하고 결과 화면을 보여 준 뒤 사용자가 홈으로 돌아가기를 선택했으며 설정된 빈도 조건을 충족한 경우에만 전면 광고 한 번을 시도할 수 있습니다. 정책 버전 3에서는 앱 열기 광고나 스플래시 화면 광고를 사용하지 않습니다.</li>
-        <li><strong>RevenueCat과 Google Play:</strong> 성인 이용자는 영구 광고 제거를 선택적으로 구매하거나 복원할 수 있습니다. RevenueCat은 임의로 생성한 익명 앱 사용자 ID, 상품·오퍼링 정보, 권리 상태, 구매·복원 이벤트, 상품 ID와 구매 토큰 같은 스토어 거래 정보, 서비스 운영과 부정행위 방지에 필요한 통상적인 네트워크·앱·기기·운영체제 메타데이터를 받습니다. Running Timer는 Google/Firebase 계정 ID 없이 RevenueCat을 구성하고 RevenueCat 진단과 자동 기기 식별자 수집을 비활성화합니다. 이메일, 광고 ID, 어트리뷰션 식별자 또는 사용자 지정 고객 속성도 설정하지 않습니다. 결제수단 정보는 Google Play가 처리하며 Running Timer와 RevenueCat은 전체 카드나 은행계좌 정보를 받지 않습니다.</li>
+        <li><strong>Google UMP와 AdMob:</strong> UMP는 이용자의 지역에 개인정보 메시지나 개인정보 옵션 진입점이 필요한지 확인하고, 필요한 경우 선택을 저장합니다. 이는 전 세계 사용자에게 별도로 받는 광고 수신 동의 화면이 아닙니다. 앱은 UMP가 광고 요청을 허용할 때만 광고를 요청합니다. Google Mobile Ads는 광고, 분석과 부정행위 방지를 위해 기기 IP 주소, IP에서 추론한 대략적 위치, 앱 실행 및 탭·동영상 조회 같은 광고 상호작용, 진단정보, Android 광고 ID, 앱 세트 ID와 해당되는 다른 기기·계정 식별자를 자동으로 수집하거나 공유할 수 있습니다. 광고는 이용자의 선택, Google 계정 신호와 적용 법률에 따라 개인 맞춤, 비개인 맞춤 또는 제한된 광고일 수 있습니다.</li>
+        <li><strong>광고 표시 시점:</strong> 앱은 활동 시작 전, GPS 획득 중, 활동 기록 중 또는 활동 저장 전에는 광고를 표시하지 않습니다. 활동을 먼저 저장하고 결과 화면을 보여 준 뒤 사용자가 홈으로 돌아가기를 선택했으며 설정된 빈도 조건을 충족한 경우에만 전면 광고 한 번을 시도할 수 있습니다. 정책 버전 4에서는 앱 열기 광고나 스플래시 화면 광고를 사용하지 않습니다.</li>
+        <li><strong>RevenueCat과 Google Play:</strong> 이용 자격을 확인한 사용자는 영구 광고 제거를 선택적으로 구매하거나 복원할 수 있습니다. RevenueCat은 임의로 생성한 익명 앱 사용자 ID, 상품·오퍼링 정보, 권리 상태, 구매·복원 이벤트, 상품 ID와 구매 토큰 같은 스토어 거래 정보, 서비스 운영과 부정행위 방지에 필요한 통상적인 네트워크·앱·기기·운영체제 메타데이터를 받습니다. Running Timer는 Google/Firebase 계정 ID 없이 RevenueCat을 구성하고 RevenueCat 진단과 자동 기기 식별자 수집을 비활성화합니다. 이메일, 광고 ID, 어트리뷰션 식별자 또는 사용자 지정 고객 속성도 설정하지 않습니다. 결제수단 정보는 Google Play가 처리하며 Running Timer와 RevenueCat은 전체 카드나 은행계좌 정보를 받지 않습니다.</li>
       </ul>
       <p>앱은 원본 GPS 좌표, 경로·폴리라인, 시작·종료 위치, 주소, 지도 이미지, 개인 활동 요약, 리더보드 합계, Google 프로필 정보, Firebase UID 또는 Haru Studio 계정 ID를 UMP, AdMob, 광고 파트너, RevenueCat 또는 Google Play에 구매 메타데이터로 보내지 않습니다. UMP가 요구하는 경우 설정의 눈에 띄는 개인정보 옵션에서 광고 선택을 바꿀 수 있습니다. 영구 광고 제거는 선택 사항이며 명시적인 복원 동작으로 복원할 수 있습니다.</p>
       <ul>
@@ -203,12 +203,12 @@
         <li><strong>Haru Studio API:</strong> <code>https://api.harustudio.net/runningtimer/v1</code>에서 선택형 인증, 동의, 암호화된 활동 요약 백업·복원, 리더보드 일간 요약, 순위와 삭제를 처리합니다.</li>
         <li><strong>GitHub Pages:</strong> 이 정책 페이지를 호스팅합니다. 브라우저로 이 페이지를 열면 GitHub와 브라우저가 일반적인 웹 접속 정보를 처리할 수 있으며 이는 앱의 처리와 별개입니다.</li>
       </ul>
-      <p>정책 버전 3은 Firebase Analytics, Firebase Crashlytics 또는 Health Connect를 사용하지 않습니다. 당사는 개인정보를 판매하지 않습니다. 분석, 오류 보고, 건강 연동, 원본 경로의 클라우드 백업 또는 다른 처리를 도입할 경우 사용자에게 활성화하기 전에 이 방침, 필요한 동의 흐름과 Google Play 데이터 보안 신고를 갱신합니다.</p>
+      <p>정책 버전 4는 Firebase Analytics, Firebase Crashlytics 또는 Health Connect를 사용하지 않습니다. 당사는 개인정보를 판매하지 않습니다. 분석, 오류 보고, 건강 연동, 원본 경로의 클라우드 백업 또는 다른 처리를 도입할 경우 사용자에게 활성화하기 전에 이 방침, 필요한 동의 흐름과 Google Play 데이터 보안 신고를 갱신합니다.</p>
 
       <h3>7. 보관, 삭제와 권리</h3>
       <ul>
         <li><strong>로컬 데이터:</strong> 활동을 삭제하거나 앱 저장공간을 지우거나 앱을 제거할 때까지 보관합니다. 활동을 삭제하면 해당 경로 좌표도 삭제되고 잔디와 통계를 다시 계산합니다.</li>
-        <li><strong>로컬 연령 이용 자격:</strong> 선택값을 바꾸거나 앱 저장공간을 지우거나 앱을 제거할 때까지 기기에 보관합니다. UMP 동의 선택은 변경·초기화되거나 만료될 때까지 Google의 동의 관리 방식에 따라 유지됩니다.</li>
+        <li><strong>로컬 앱 이용 동의:</strong> 만 14세 이상 확인, 약관 버전, 처리방침 버전과 동의 시각은 앱 저장공간을 지우거나 앱을 제거할 때까지 기기에 보관합니다. UMP 선택은 변경·초기화되거나 만료될 때까지 Google의 동의 관리 방식에 따라 유지됩니다.</li>
         <li><strong>광고 데이터:</strong> Google과 해당 광고 파트너가 각 정책, 법적 의무, 동의와 관리 기능에 따라 보관합니다. 지원되는 기기에서는 Android 설정에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</li>
         <li><strong>구매 데이터:</strong> 익명 RevenueCat 고객과 거래·권리 이력은 RevenueCat과 Google Play의 정책 및 적용되는 법률·회계·부정행위 방지·계약상 요구에 따라 보관됩니다. Running Timer 서버 계정을 삭제해도 독립적인 Google Play 구매 이력이나 권리 복원에 필요한 익명 구매 기록이 자동으로 삭제되지는 않습니다. 당사가 관리하는 정보에 관한 개인정보 요청은 당사에 문의하고 Google의 구매·계정 정보는 Google의 관리 기능을 이용할 수 있습니다.</li>
         <li><strong>개인 활동 요약 백업:</strong> 계정 동기화를 사용하는 동안 보관합니다. 동기화된 활동 삭제는 서버 요약을 삭제하고, 앱 계정 삭제는 남은 모든 암호화 요약과 동기화 이력을 활성 시스템에서 삭제합니다.</li>
@@ -224,7 +224,7 @@
       <p>Google, RevenueCat, 각 제공업체와 Haru Studio API는 미국을 포함해 사용자의 국가 밖에서 각 약관과 적용되는 보호조치에 따라 정보를 처리할 수 있습니다. 선택형 온라인 기능이나 수익화 기능을 사용하면 국외 처리가 발생할 수 있습니다.</p>
 
       <h3>9. 아동과 연령 이용 자격</h3>
-      <p>이 앱은 만 13세 미만 아동을 대상으로 하지 않으며 아동의 개인정보를 고의로 수집하지 않습니다. 만 18세 미만이라고 답했거나 성인 이용 자격을 확인하지 않은 이용자는 앱의 광고 동의와 구매 SDK 흐름에 진입시키지 않습니다. 아동이 계정 정보를 제공했다고 생각되면 조사와 삭제를 위해 연락해 주십시오.</p>
+      <p>이 앱은 만 14세 이상만 이용할 수 있습니다. 법정대리인 동의에 의한 만 14세 미만 이용 절차를 제공하지 않으며, 만 14세 미만 아동의 개인정보를 고의로 수집하지 않습니다. 필수 만 14세 이상 확인 없이는 앱에 진입할 수 없습니다. 아동이 계정 정보를 제공했다고 생각되면 조사와 삭제를 위해 연락해 주십시오.</p>
 
       <h3>10. 변경과 문의</h3>
       <p>중요한 변경은 새 시행일과 정책 버전과 함께 이 페이지에 게시합니다. 계정 동기화나 리더보드의 목적, 데이터, 공개 범위, 보관 또는 기기 규칙이 실질적으로 바뀌면 영향을 받는 기능의 재동의를 받습니다. 적용되는 광고 동의는 UMP에서 관리합니다.</p>
@@ -235,7 +235,7 @@
       <h2>日本語</h2>
 
       <h3>1. 適用範囲と選択</h3>
-      <p>本ポリシーは、Haru Studio games（以下「当社」）がRunning Timer（以下「本アプリ」）で情報を取り扱う方法を説明します。アカウントを作成しなくても、アクティビティの記録、ルート、芝生、履歴、統計を利用できます。暗号化されたアクティビティ要約のバックアップとリーダーボードへの参加は任意のオンライン機能です。アカウント同期とリーダーボード参加は、それぞれGoogleログイン開始前に別個の通知と明示的な同意を求め、一方への同意が他方を有効にすることはありません。収益化を有効にした本番ビルドでは、成人ユーザーに広告が表示される場合があり、広告の永久削除を任意で購入できます。任意の同意を拒否・撤回した場合や購入しない場合も、ローカル機能と公開ランキングの閲覧は利用できます。</p>
+      <p>本ポリシーは、Haru Studio games（以下「当社」）がRunning Timer（以下「本アプリ」）で情報を取り扱う方法を説明します。本アプリは満14歳以上の方のみ利用できます。アカウントを作成しなくても、アクティビティの記録、ルート、芝生、履歴、統計を利用できます。暗号化されたアクティビティ要約のバックアップとリーダーボードへの参加は任意のオンライン機能です。アカウント同期とリーダーボード参加は、それぞれGoogleログイン開始前に別個の通知と明示的な同意を求め、一方への同意が他方を有効にすることはありません。収益化を有効にした本番ビルドでは、利用資格を確認したユーザーに広告が表示される場合があり、広告の永久削除を任意で購入できます。任意のオンライン機能への同意を拒否・撤回した場合や購入しない場合も、ローカル機能と公開ランキングの閲覧は利用できます。</p>
 
       <h3>2. 端末に保存される正確な位置情報とアクティビティデータ</h3>
       <p>ユーザーが明示的にアクティビティを開始すると、本アプリはフォアグラウンドで正確なGPS位置情報を処理します。バックグラウンド位置情報の権限を許可した場合は、画面消灯中または本アプリがバックグラウンドにある間も処理します。バックグラウンド収集はユーザーが開始したアクティビティの進行中に限られ、Androidの継続的なフォアグラウンドサービス通知を表示し、完了または破棄すると停止します。</p>
@@ -271,12 +271,12 @@
       <p>個人アクティビティ要約はRunning Timer専用サーバーキーで暗号化して保存します。別の端末へ復元した活動には時間・距離・芝生・統計情報だけが含まれ、ルートポイントとルート地図はありません。活動を削除すると、後で同期する要約削除リクエストを作成します。アカウント同期とリーダーボード参加は互いに独立しています。</p>
       <p>1つのアカウントでは、最後に参加した1台の端末だけがリーダーボードへ貢献します。別の端末から参加すると、そのアカウントの以前のRunning Timerリーダーボード合計はリセットされ、旧端末からの貢献は拒否されます。公開ランキングはログインなしで閲覧できますが、自分の順位の閲覧と貢献にはログインが必要です。</p>
 
-      <h3>5. 広告への同意と広告の永久削除</h3>
-      <p>広告と購入は、これらの機能を有効にした本番ビルドでのみ利用されます。いずれかのSDKを開始する前に、本アプリはユーザーが18歳以上かを確認し、その利用資格の選択結果だけを端末に保存します。生年月日や正確な年齢を尋ねたり保存したりしません。18歳未満、不明、または未回答の場合、本アプリはGoogle UMP、Google Mobile Ads、RevenueCatを呼び出しません。主要なアクティビティ記録機能は引き続き利用できます。</p>
+      <h3>5. 広告プライバシー設定と広告の永久削除</h3>
+      <p>広告と購入は、これらの機能を有効にした本番ビルドでのみ利用されます。収益化SDKを開始する前に、本アプリは満14歳以上であることの確認と、利用規約・本プライバシーポリシーへの同意を必須とします。端末には満14歳以上の確認、規約バージョン、ポリシーバージョン、同意時刻のみを保存し、生年月日や正確な年齢を尋ねたり保存したりしません。14歳未満の方は本アプリへ進めません。必須確認が保存される前はGoogle UMP、Google Mobile Ads、RevenueCatを呼び出しません。</p>
       <ul>
-        <li><strong>Google UMPとAdMob:</strong> 成人ユーザーの場合、UMPはプライバシーメッセージまたはプライバシーオプションへの入口が必要かを確認し、同意の選択を保存します。本アプリは、UMPが広告リクエストを許可した場合にのみ広告をリクエストします。Google Mobile Adsは、広告、分析、不正防止のため、端末のIPアドレス、IPから推定されるおおよその位置、アプリ起動、タップや動画閲覧などの広告操作、診断情報、Android広告ID、App Set ID、および該当するその他の端末・アカウント識別子を自動的に収集または共有する場合があります。広告はユーザーの選択と適用法令に応じて、パーソナライズ、非パーソナライズ、または制限付きとなる場合があります。</li>
-        <li><strong>広告の表示時点:</strong> アクティビティ開始前、GPS取得中、記録中、または保存前に広告を表示しません。アクティビティを先に保存して結果画面を表示した後、ユーザーがホームへ戻る操作を行い、設定された頻度条件を満たす場合に限り、インタースティシャル広告を1回試行することがあります。ポリシーバージョン3では、アプリ起動広告またはスプラッシュ画面広告を使用しません。</li>
-        <li><strong>RevenueCatとGoogle Play:</strong> 成人ユーザーは広告の永久削除を任意で購入または復元できます。RevenueCatは、ランダムに生成された匿名App User ID、商品・オファリング情報、権利の状態、購入・復元イベント、商品IDや購入トークンなどのストア取引情報、およびサービス運用と不正防止に必要な通常のネットワーク・アプリ・端末・OSメタデータを受け取ります。Running TimerはGoogle/FirebaseアカウントIDを渡さずにRevenueCatを構成し、RevenueCatの診断と端末識別子の自動収集を無効にします。メール、広告ID、アトリビューション識別子、カスタム顧客属性も設定しません。支払情報はGoogle Playが処理し、Running TimerとRevenueCatはカードまたは銀行口座の完全な情報を受け取りません。</li>
+        <li><strong>Google UMPとAdMob:</strong> UMPはユーザーの地域でプライバシーメッセージまたはプライバシーオプションへの入口が必要かを確認し、必要な場合に選択を保存します。これは全世界のユーザーに別途求める広告受信同意画面ではありません。本アプリは、UMPが広告リクエストを許可した場合にのみ広告をリクエストします。Google Mobile Adsは、広告、分析、不正防止のため、端末のIPアドレス、IPから推定されるおおよその位置、アプリ起動、タップや動画閲覧などの広告操作、診断情報、Android広告ID、App Set ID、および該当するその他の端末・アカウント識別子を自動的に収集または共有する場合があります。広告はユーザーの選択、Googleアカウントのシグナルおよび適用法令に応じて、パーソナライズ、非パーソナライズ、または制限付きとなる場合があります。</li>
+        <li><strong>広告の表示時点:</strong> アクティビティ開始前、GPS取得中、記録中、または保存前に広告を表示しません。アクティビティを先に保存して結果画面を表示した後、ユーザーがホームへ戻る操作を行い、設定された頻度条件を満たす場合に限り、インタースティシャル広告を1回試行することがあります。ポリシーバージョン4では、アプリ起動広告またはスプラッシュ画面広告を使用しません。</li>
+        <li><strong>RevenueCatとGoogle Play:</strong> 利用資格を確認したユーザーは広告の永久削除を任意で購入または復元できます。RevenueCatは、ランダムに生成された匿名App User ID、商品・オファリング情報、権利の状態、購入・復元イベント、商品IDや購入トークンなどのストア取引情報、およびサービス運用と不正防止に必要な通常のネットワーク・アプリ・端末・OSメタデータを受け取ります。Running TimerはGoogle/FirebaseアカウントIDを渡さずにRevenueCatを構成し、RevenueCatの診断と端末識別子の自動収集を無効にします。メール、広告ID、アトリビューション識別子、カスタム顧客属性も設定しません。支払情報はGoogle Playが処理し、Running TimerとRevenueCatはカードまたは銀行口座の完全な情報を受け取りません。</li>
       </ul>
       <p>本アプリは、生のGPSポイント、ルート・ポリライン、開始・終了地点、住所、地図画像、非公開のアクティビティ要約、リーダーボード合計、Googleプロフィール情報、Firebase UID、Haru StudioアカウントIDを、購入メタデータとしてUMP、AdMob、広告パートナー、RevenueCat、Google Playへ送信しません。UMPが必要と判断した場合、設定内の見つけやすいプライバシーオプションから広告の選択を変更できます。広告の永久削除は任意であり、明示的な復元操作により復元できます。</p>
       <ul>
@@ -292,12 +292,12 @@
         <li><strong>Haru Studio API:</strong> <code>https://api.harustudio.net/runningtimer/v1</code>で、任意の認証、同意、暗号化されたアクティビティ要約のバックアップ・復元、リーダーボード日次要約、ランキング、削除を処理します。</li>
         <li><strong>GitHub Pages:</strong> 本ページをホストします。ブラウザで本ページを開くと、GitHubとブラウザが通常のウェブアクセス情報を処理する場合があります。これは本アプリによる処理とは別です。</li>
       </ul>
-      <p>ポリシーバージョン3では、Firebase Analytics、Firebase Crashlytics、Health Connectを使用しません。当社は個人データを販売しません。分析、クラッシュ報告、健康連携、生のルートのクラウドバックアップ、その他の処理を導入する場合は、ユーザー向けに有効化する前に、本ポリシー、必要な同意フロー、Google Playのデータセーフティ申告を更新します。</p>
+      <p>ポリシーバージョン4では、Firebase Analytics、Firebase Crashlytics、Health Connectを使用しません。当社は個人データを販売しません。分析、クラッシュ報告、健康連携、生のルートのクラウドバックアップ、その他の処理を導入する場合は、ユーザー向けに有効化する前に、本ポリシー、必要な同意フロー、Google Playのデータセーフティ申告を更新します。</p>
 
       <h3>7. 保持、削除、権利</h3>
       <ul>
         <li><strong>ローカルデータ:</strong> アクティビティを削除する、本アプリのストレージを消去する、または本アプリをアンインストールするまで保持します。アクティビティを削除すると、そのルートポイントも削除し、芝生と統計を再計算します。</li>
-        <li><strong>ローカルの年齢利用資格:</strong> 選択を変更する、本アプリのストレージを消去する、またはアンインストールするまで端末に保持します。UMPの同意選択は、変更、リセット、または期限切れとなるまでGoogleの同意管理に従って保持されます。</li>
+        <li><strong>ローカルのアプリ利用同意:</strong> 満14歳以上の確認、規約バージョン、ポリシーバージョン、同意時刻は、本アプリのストレージを消去するかアンインストールするまで端末に保持します。UMPの選択は、変更、リセット、または期限切れとなるまでGoogleの同意管理に従って保持されます。</li>
         <li><strong>広告データ:</strong> Googleおよび該当する広告パートナーが、それぞれのポリシー、法的義務、同意、管理機能に従って保持します。対応端末では、Android設定から広告IDをリセットまたは削除できます。</li>
         <li><strong>購入データ:</strong> 匿名のRevenueCat顧客と取引・権利履歴は、RevenueCatとGoogle Playのポリシー、および適用される法律、会計、不正防止、契約上の要件に従って保持されます。Running Timerのサーバーアカウントを削除しても、独立したGoogle Play購入履歴や権利復元に必要な匿名購入記録は自動的には削除されません。当社が管理する情報に関するプライバシー請求は当社へ連絡し、Googleの購入・アカウント情報にはGoogleの管理機能を利用できます。</li>
         <li><strong>個人アクティビティ要約のバックアップ:</strong> アカウント同期の利用中に保持します。同期済みアクティビティの削除はサーバー要約を削除し、アプリアカウントの削除は残りのすべての暗号化要約と同期履歴を稼働中システムから削除します。</li>
@@ -313,7 +313,7 @@
       <p>Google、RevenueCat、各提供者、Haru Studio APIは、米国を含むユーザーの国以外で、それぞれの規約と適用される保護措置に従って情報を処理する場合があります。任意のオンライン機能または収益化機能を選ぶと、国外処理が行われる可能性があります。</p>
 
       <h3>9. 子どもと年齢利用資格</h3>
-      <p>本アプリは13歳未満の子どもを対象としておらず、子どもの個人情報を意図的に収集しません。18歳未満と回答した、または成人の利用資格を確認していないユーザーは、本アプリの広告同意および購入SDKのフローに進めません。子どもがアカウント情報を提供したと思われる場合は、調査と削除のため当社へご連絡ください。</p>
+      <p>本アプリは満14歳以上の方のみ利用できます。保護者の同意による14歳未満の利用手続は提供せず、14歳未満の子どもの個人情報を意図的に収集しません。必須の満14歳以上確認がなければ本アプリへ進めません。子どもがアカウント情報を提供したと思われる場合は、調査と削除のため当社へご連絡ください。</p>
 
       <h3>10. 変更とお問い合わせ</h3>
       <p>重要な変更は、新しい発効日とポリシーバージョンとともに本ページへ掲載します。アカウント同期またはリーダーボードの目的、データ、公開範囲、保持、端末ルールが実質的に変わる場合は、影響を受ける機能への再同意を求めます。該当する広告同意はUMPで管理します。</p>
@@ -323,7 +323,7 @@
   </main>
 
   <footer>
-    Policy version 3 · Effective September 3, 2026 · <a href="./data-deletion/">Account &amp; data deletion</a>
+    Policy version 4 · Effective September 6, 2026 · <a href="./data-deletion/">Account &amp; data deletion</a>
   </footer>
 </body>
 </html>
