@@ -39,7 +39,7 @@
   <header id="top">
     <a href="../">Privacy Policy</a>
     <h1>Running Timer Account &amp; Data Deletion</h1>
-    <p class="meta">Walk &amp; Run Tracker · <code>net.harustudio.runningtimer</code> · Haru Studio games · Policy version 7 · Last updated October 20, 2026</p>
+    <p class="meta">Walk &amp; Run Tracker · <code>net.harustudio.runningtimer</code> · Haru Studio games · Policy version 8 · Last updated October 20, 2026</p>
     <nav aria-label="Deletion page languages">
       <a href="#english">English</a>
       <a href="#korean" lang="ko">한국어</a>
@@ -71,7 +71,7 @@
 
       <h3>2. Current in-app availability</h3>
       <div class="note">
-        <strong>The current source configuration keeps Google sign-in, account sync, production ads, and production purchases disabled by default.</strong> The privacy policy already describes advertising and purchases so they can be enabled only after the provider assets, consent message, and Google Play declarations are ready. The in-app account deletion path is exposed with optional sync; a release enabling leaderboard participation must also provide the separate “Leave leaderboard” path. The external email request on this page is available now.
+        <strong>The current production configuration enables ads and optional Google sign-in/account sync; purchases and leaderboard participation remain disabled.</strong> Local activity recording does not require signing in. The in-app account deletion path is available with optional sync. A future release enabling leaderboards must also provide a separate “Leave leaderboard” path. The external email request on this page is available now.
       </div>
 
       <h3>3. Request deletion from the web</h3>
@@ -84,7 +84,7 @@
       <p>We will normally acknowledge the request within 7 business days and complete verified deletion within 30 days. If applicable law permits or requires a different period, we will explain the reason and expected date. A support email may be retained for up to 30 days after completion to resolve the request, then deleted unless longer retention is legally required.</p>
 
       <h3>4. What remains after deletion</h3>
-      <p>Optional weight and calorie estimates are stored only on your device, not in your server account or summary backup. You can delete the current weight in the weight settings. Earlier workout weight snapshots and calorie estimates remain until you delete those workouts, clear App storage, or uninstall. Changing or deleting the current weight does not rewrite earlier workouts.</p>
+      <p>Optional body profile fields (weight, the sex coefficient used by the equation, age in whole years and height) and calorie estimates stay on your device, not in your server account or summary backup. Delete the current profile in the body-profile settings. Earlier workouts retain the profile supplied at their start and calorie estimates until you delete those workouts, clear App storage or uninstall. Changing or deleting the current profile does not rewrite earlier workouts. Server-account deletion does not remove these local fields, and summary restore does not restore them.</p>
       <ul>
         <li>Our active systems retain no Running Timer account linkage, encrypted activity summary, sync history, leaderboard total, consent record, or public-code association for the deleted account.</li>
         <li>Deleted Haru Studio server records may remain in access-restricted encrypted disaster-recovery backups until the configured retention expires, currently within 7 days. They are not used for normal service operation.</li>
@@ -116,7 +116,7 @@
 
       <h3>2. 현재 앱 내 기능 상태</h3>
       <div class="note">
-        <strong>현재 소스 설정은 Google 로그인, 계정 동기화, 프로덕션 광고와 프로덕션 구매를 기본적으로 비활성화합니다.</strong> 개인정보처리방침에는 광고와 구매를 미리 반영했으며 제공업체 자산, 동의 메시지와 Google Play 신고가 준비된 뒤에만 활성화할 수 있습니다. 앱 내 계정 삭제 경로는 선택형 동기화와 함께 노출되며, 리더보드 참여를 활성화하는 출시본은 별도의 “리더보드 참여 종료” 경로도 제공해야 합니다. 이 페이지의 외부 이메일 요청은 지금 이용할 수 있습니다.
+        <strong>현재 프로덕션 설정은 광고와 선택형 Google 로그인·계정 동기화를 활성화하며 구매·리더보드 참여는 비활성입니다.</strong> 로컬 운동 기록에는 로그인이 필요하지 않습니다. 앱 내 계정 삭제 경로는 선택형 동기화와 함께 제공됩니다. 향후 리더보드를 활성화하는 출시본은 별도의 “리더보드 참여 종료” 경로도 제공해야 합니다. 이 페이지의 외부 이메일 요청은 지금 이용할 수 있습니다.
       </div>
 
       <h3>3. 웹에서 삭제 요청하기</h3>
@@ -129,7 +129,7 @@
       <p>일반적으로 영업일 기준 7일 안에 요청을 접수하고, 본인 확인이 끝난 삭제 요청은 30일 안에 완료합니다. 적용 법률이 다른 기간을 허용하거나 요구하면 이유와 예상 일자를 안내합니다. 요청 해결을 위해 지원 이메일을 완료 후 최대 30일간 보관한 뒤 삭제할 수 있으며, 법률이 더 긴 보관을 요구하는 경우는 제외합니다.</p>
 
       <h3>4. 삭제 후 남을 수 있는 정보</h3>
-      <p>선택형 체중·추정 칼로리는 서버 계정이나 활동 요약 백업이 아닌 기기에만 저장됩니다. 체중 설정에서 현재 체중을 삭제할 수 있습니다. 이전 운동 당시 체중·칼로리는 해당 운동 삭제·앱 저장공간 삭제·앱 제거까지 남으며 현재 체중 변경·삭제로 이전 기록을 덮어쓰지 않습니다.</p>
+      <p>선택형 신체 정보(체중·계산식의 성별 계수·정수 만 나이·키)와 추정 칼로리는 서버 계정이나 요약 백업이 아닌 기기에만 저장됩니다. 신체 정보 설정에서 현재 프로필을 삭제할 수 있습니다. 이전 운동 시작 당시 입력값과 칼로리는 해당 운동 삭제·앱 저장공간 삭제·앱 제거까지 남으며 현재 프로필 변경·삭제로 이전 기록을 덮어쓰지 않습니다. 서버 계정 삭제로 이 로컬 정보는 지워지지 않고 활동 요약 복원으로도 복원되지 않습니다.</p>
       <ul>
         <li>당사의 활성 시스템에는 삭제한 계정의 Running Timer 계정 연결, 암호화된 활동 요약, 동기화 이력, 리더보드 합계, 동의 기록 또는 공개 코드 연결이 남지 않습니다.</li>
         <li>삭제된 Haru Studio 서버 기록은 설정된 보관 기간이 끝날 때까지 접근이 제한된 암호화 재해 복구 백업에 남을 수 있으며 현재 7일 이내에 만료됩니다. 일반 서비스 운영에는 사용하지 않습니다.</li>
@@ -160,7 +160,7 @@
 
       <h3>2. 現在のアプリ内機能</h3>
       <div class="note">
-        <strong>現在のソース設定では、Googleログイン、アカウント同期、本番広告、本番購入は初期状態で無効です。</strong> プライバシーポリシーには広告と購入をあらかじめ反映しており、事業者アセット、同意メッセージ、Google Play申告の準備後にのみ有効化できます。アプリ内のアカウント削除経路は任意の同期とともに公開され、リーダーボードを有効にする場合は別途「リーダーボードから退出」経路も提供します。本ページの外部メールリクエストは現在利用できます。
+        <strong>現在の本番設定では広告と任意のGoogleログイン・アカウント同期が有効で、購入とリーダーボード参加は無効です。</strong> ローカル運動記録にログインは不要です。アプリ内のアカウント削除は任意の同期とともに提供します。将来リーダーボードを有効にする場合は、別途「リーダーボードから退出」経路も提供します。本ページの外部メールリクエストは現在利用できます。
       </div>
 
       <h3>3. ウェブから削除を依頼する方法</h3>
@@ -173,7 +173,7 @@
       <p>通常、7営業日以内に受領を連絡し、本人確認済みの削除依頼は30日以内に完了します。適用法令が別の期間を認める、または求める場合は、理由と予定日をご案内します。サポートメールは依頼解決のため、完了後最大30日保持してから削除する場合があります。ただし、法令がより長い保持を求める場合を除きます。</p>
 
       <h3>4. 削除後に残る可能性がある情報</h3>
-      <p>任意の体重・推定カロリーは、サーバーアカウントや要約バックアップではなく端末内のみに保存します。現在の体重は体重設定から削除できます。過去の運動時の体重・カロリーは、その運動の削除、ストレージ消去、またはアンインストールまで残り、現在の体重の変更・削除で過去の記録を書き換えません。</p>
+      <p>任意の身体情報（体重・計算式の性別係数・整数の満年齢・身長）と推定カロリーは、サーバーアカウントや要約バックアップではなく端末内のみに保存します。現在のプロフィールは身体情報設定から削除できます。過去の運動開始時の入力値とカロリーは、その運動の削除、ストレージ消去、またはアンインストールまで残り、現在のプロフィールの変更・削除では過去の記録を書き換えません。サーバーアカウントの削除ではローカル項目は消えず、要約の復元でも復元しません。</p>
       <ul>
         <li>当社の稼働中システムには、削除したアカウントの暗号化されたアクティビティ要約、同期履歴、リーダーボード合計、同意記録、公開コードとの関連付けは残りません。</li>
         <li>災害復旧用バックアップに残る削除済みデータは、現在7日以内に期限切れとなり、通常のサービス提供には使用されません。</li>
