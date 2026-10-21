@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>WatchDiet — Privacy Policy</title>
+  <style>
+    :root{color-scheme:light dark;--bg:#fffaf7;--ink:#29232a;--muted:#605960;--card:#fff;--line:#ead8d2;--accent:#a34256}
+    @media(prefers-color-scheme:dark){:root{--bg:#211c20;--ink:#fff5f0;--muted:#d0bfc6;--card:#2c252a;--line:#55424b;--accent:#ff9dad}}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 system-ui,sans-serif}header,main,footer{max-width:900px;margin:auto;padding:24px}header{padding-top:42px}h1{font-size:2.3rem;line-height:1.15}h2{margin-top:0}h3{margin-top:24px}nav{display:flex;flex-wrap:wrap;gap:8px}a{color:var(--accent)}nav a{border:1px solid var(--line);border-radius:30px;padding:6px 12px;text-decoration:none}section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;margin:20px 0}p,li{overflow-wrap:anywhere}small{color:var(--muted)}footer{border-top:1px solid var(--line)}
+  </style>
+</head>
+<body>
+<header>
+  <a href="../">Haru Studio games</a>
+  <h1>WatchDiet Privacy Policy</h1>
+  <p><small>Android package: net.harustudio.watchdiet · Effective: October 21, 2026 · Provider: Haru Studio games</small></p>
+  <nav aria-label="Languages"><a href="#en">English</a><a href="#ko" lang="ko">한국어</a><a href="#ja" lang="ja">日本語</a><a href="#fr" lang="fr">Français</a><a href="#es" lang="es">Español</a></nav>
+</header>
+<main>
+<section id="en" lang="en">
+  <h2>English</h2>
+  <p>WatchDiet helps you record meals, estimated calories, weight and goals. Meal and weight records, goals and saved photos stay in your device's local storage. This version has no account, cloud backup, advertising or in-app purchases.</p>
+  <h3>Photo analysis</h3>
+  <p>When you explicitly request analysis after seeing the notice, the selected photo is sent over HTTPS to our development analysis server and OpenAI to identify visible foods and estimate portions and calories. Estimates can be edited before saving. The server removes image metadata, including location, before sending the image to OpenAI. Neither our server nor its database keeps the photo, food names, meal diary or weight. OpenAI processes the image under its own applicable terms and retention practices; our API requests that the response not be stored for model training or later retrieval (<code>store:false</code>), but this does not guarantee zero provider retention.</p>
+  <h3>Server metadata and retention</h3>
+  <p>To issue anonymous installation credentials and enforce the per-installation limit of 100 analyses per UTC day, our server stores an installation UUID, a hashed credential, daily usage counts, request UUID and processing status, and the photo-analysis notice version and consent time. A daily HMAC of the network IP address limits credential issuance; the raw IP address is not saved in that database. Request status, usage and IP HMAC records are retained for about two UTC days; consent history for 90 days. Installation credentials expire after 30 days and are removed under the server retention process. No meal or photo content is used for advertising.</p>
+  <h3>Your choices</h3>
+  <p>You can use manual meal recording without sending a photo. You can edit and delete local meal and weight entries in the app. Clearing app storage or uninstalling removes local records and photos on that device; Android automatic backup is disabled. See <a href="./data-deletion/">data deletion instructions</a> for server metadata and support requests. Contact <a href="mailto:kangmunsu.dev@gmail.com">kangmunsu.dev@gmail.com</a> about this policy or your data. This policy may be updated when the app's data handling changes.</p>
+</section>
+<section id="ko" lang="ko">
+  <h2>한국어</h2>
+  <p>WatchDiet는 식사, 추정 칼로리, 체중과 목표를 기록하는 앱입니다. 식사·체중 기록, 목표 및 저장한 사진은 기기 내부에 보관합니다. 현재 버전에는 계정, 클라우드 백업, 광고, 앱 내 결제가 없습니다.</p>
+  <h3>사진 분석</h3>
+  <p>안내를 확인한 뒤 분석을 직접 요청하면 선택한 사진을 HTTPS로 개발 분석 서버와 OpenAI에 보내 음식, 양, 칼로리를 추정합니다. 결과는 저장 전에 수정할 수 있습니다. 서버는 OpenAI에 보내기 전에 위치를 포함한 이미지 메타데이터를 제거합니다. 당사 서버와 DB에는 사진, 음식명, 식사 일기, 체중을 보관하지 않습니다. OpenAI는 자체 약관과 보관 방식에 따라 이미지를 처리합니다. API는 <code>store:false</code>를 지정하지만 제공자 측 보관이 전혀 없음을 보장하지는 않습니다.</p>
+  <h3>서버 메타데이터와 보관 기간</h3>
+  <p>익명 설치 인증과 설치별 UTC 기준 하루 100회 분석 한도를 위해 설치 UUID, 인증값의 해시, 일별 사용 횟수, 요청 UUID·처리 상태, 사진 분석 안내 버전·동의 시각을 보관합니다. 접속 IP는 인증 발급 제한을 위한 날짜별 HMAC으로 처리하며 원문을 DB에 저장하지 않습니다. 요청 상태·사용량·IP HMAC은 약 2 UTC일, 동의 이력은 90일 보관합니다. 설치 인증은 30일 후 만료되며 서버 보관 절차에 따라 제거합니다. 음식이나 사진 내용은 광고에 사용하지 않습니다.</p>
+  <h3>사용자 선택</h3>
+  <p>사진 전송 없이 직접 입력으로 기록할 수 있고, 앱에서 식사·체중 기록을 수정하거나 삭제할 수 있습니다. 앱 저장공간을 지우거나 앱을 삭제하면 해당 기기의 기록과 사진이 제거됩니다. Android 자동 백업은 꺼져 있습니다. 서버 메타데이터와 문의 방법은 <a href="./data-deletion/">데이터 삭제 안내</a>를 참고하세요. 문의: <a href="mailto:kangmunsu.dev@gmail.com">kangmunsu.dev@gmail.com</a>. 데이터 처리 방식이 바뀌면 본 방침을 갱신합니다.</p>
+</section>
+<section id="ja" lang="ja">
+  <h2>日本語</h2>
+  <p>WatchDietでは食事、推定カロリー、体重、目標を記録できます。食事・体重の記録、目標、保存した写真は端末内に保存されます。この版にはアカウント、クラウドバックアップ、広告、アプリ内購入はありません。</p>
+  <h3>写真の分析</h3>
+  <p>説明を確認して分析を明示的に依頼すると、選択した写真はHTTPSで当社の開発用分析サーバーとOpenAIに送られ、食品、量、カロリーを推定します。結果は保存前に修正できます。サーバーはOpenAIへの送信前に位置情報などの画像メタデータを削除します。当社のサーバーやデータベースは写真、食品名、食事日記、体重を保存しません。OpenAIは適用される規約と保存方針に従って処理します。APIは<code>store:false</code>を指定しますが、提供元での保存が完全にないことは保証できません。</p>
+  <h3>サーバー情報と保存期間</h3>
+  <p>匿名のインストール認証とインストールごとのUTC日付で1日100回の上限のため、インストールUUID、認証情報のハッシュ、日別利用回数、リクエストUUIDと処理状態、分析案内の版と同意時刻を保存します。接続元IPは認証発行制限用の日別HMACに変換し、元のIPはDBに保存しません。リクエスト状態、利用回数、IP HMACは約2 UTC日、同意履歴は90日保存します。認証情報は30日後に失効し、保存手順に従って削除します。</p>
+  <h3>選択と削除</h3>
+  <p>写真を送信せず手入力で記録できます。アプリ内で食事・体重の記録を編集・削除できます。アプリのデータ消去またはアンインストールで、その端末の記録と写真が削除されます。Androidの自動バックアップは無効です。詳細は<a href="./data-deletion/">データ削除案内</a>をご覧ください。お問い合わせ: <a href="mailto:kangmunsu.dev@gmail.com">kangmunsu.dev@gmail.com</a>。</p>
+</section>
+<section id="fr" lang="fr">
+  <h2>Français</h2>
+  <p>WatchDiet permet de noter les repas, les calories estimées, le poids et les objectifs. Ces données et les photos enregistrées restent sur l’appareil. Cette version ne propose ni compte, ni sauvegarde cloud, ni publicité, ni achat intégré.</p>
+  <h3>Analyse des photos</h3>
+  <p>Après lecture de l’avis, si vous demandez une analyse, la photo choisie est transmise par HTTPS à notre serveur de développement et à OpenAI pour estimer les aliments, portions et calories. Vous pouvez corriger le résultat avant de l’enregistrer. Le serveur retire les métadonnées de l’image, notamment la localisation, avant l’envoi à OpenAI. Ni notre serveur ni sa base de données ne conservent la photo, les noms des aliments, le journal des repas ou le poids. OpenAI traite l’image selon ses propres conditions et pratiques de conservation. Notre API demande <code>store:false</code>, sans garantir l’absence totale de conservation par le fournisseur.</p>
+  <h3>Données techniques et conservation</h3>
+  <p>Pour l’identification anonyme de l’installation et la limite de 100 analyses par installation et par jour UTC, le serveur conserve un UUID d’installation, une empreinte de l’identifiant, les compteurs quotidiens, l’UUID et l’état des demandes, ainsi que la version de l’avis et l’heure du consentement. L’adresse IP est transformée en HMAC quotidien pour limiter la création d’identifiants; l’IP brute n’est pas conservée dans la base. États, compteurs et HMAC sont conservés environ deux jours UTC, l’historique du consentement 90 jours. L’identifiant expire après 30 jours et est supprimé selon la procédure de conservation.</p>
+  <h3>Vos choix</h3>
+  <p>Vous pouvez saisir les repas sans transmettre de photo, puis modifier ou supprimer les repas et poids dans l’app. Effacer les données de l’app ou la désinstaller supprime les données et photos locales de cet appareil. La sauvegarde automatique Android est désactivée. Consultez les <a href="./data-deletion/">instructions de suppression</a>. Contact : <a href="mailto:kangmunsu.dev@gmail.com">kangmunsu.dev@gmail.com</a>.</p>
+</section>
+<section id="es" lang="es">
+  <h2>Español</h2>
+  <p>WatchDiet permite registrar comidas, calorías estimadas, peso y objetivos. Los registros y fotos guardadas permanecen en el dispositivo. Esta versión no tiene cuentas, copia de seguridad en la nube, anuncios ni compras integradas.</p>
+  <h3>Análisis de fotos</h3>
+  <p>Tras leer el aviso, si solicitas un análisis, la foto elegida se envía por HTTPS a nuestro servidor de desarrollo y a OpenAI para estimar alimentos, porciones y calorías. Puedes corregir el resultado antes de guardarlo. El servidor elimina los metadatos de la imagen, incluida la ubicación, antes de enviarla a OpenAI. Ni nuestro servidor ni su base de datos guardan la foto, nombres de alimentos, diario de comidas o peso. OpenAI procesa la imagen según sus propias condiciones y prácticas de retención. Nuestra API usa <code>store:false</code>, lo que no garantiza retención nula por parte del proveedor.</p>
+  <h3>Metadatos y conservación</h3>
+  <p>Para autenticar anónimamente la instalación y aplicar el límite de 100 análisis por instalación y día UTC, el servidor guarda un UUID de instalación, un hash de la credencial, contadores diarios, UUID y estado de solicitudes, versión del aviso y hora del consentimiento. La IP se transforma en un HMAC diario para limitar la emisión de credenciales; la IP original no se guarda en la base. Estados, contadores y HMAC se conservan unos dos días UTC; el historial de consentimiento, 90 días. La credencial caduca a los 30 días y se elimina mediante la política de retención.</p>
+  <h3>Tus opciones</h3>
+  <p>Puedes registrar comidas manualmente sin enviar fotos y editar o borrar comidas y pesos en la app. Borrar los datos de la app o desinstalarla elimina los registros y fotos locales de ese dispositivo. La copia automática de Android está desactivada. Consulta las <a href="./data-deletion/">instrucciones de eliminación</a>. Contacto: <a href="mailto:kangmunsu.dev@gmail.com">kangmunsu.dev@gmail.com</a>.</p>
+</section>
+</main>
+<footer><a href="#en">Back to top</a> · <a href="./data-deletion/">Data deletion</a> · Haru Studio games</footer>
+</body>
+</html>
