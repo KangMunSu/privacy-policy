@@ -39,7 +39,7 @@
   <header id="top">
     <a href="../">Privacy Policy</a>
     <h1>Running Timer Account &amp; Data Deletion</h1>
-    <p class="meta">Walk &amp; Run Tracker · <code>net.harustudio.runningtimer</code> · Haru Studio games · Policy version 8 · Last updated October 20, 2026</p>
+    <p class="meta">Walk &amp; Run Tracker · <code>net.harustudio.runningtimer</code> · Haru Studio games · Policy version 10 · Last updated October 22, 2026</p>
     <nav aria-label="Deletion page languages">
       <a href="#english">English</a>
       <a href="#korean" lang="ko">한국어</a>
@@ -61,7 +61,8 @@
         <thead><tr><th>Scope</th><th>What is deleted</th><th>How</th></tr></thead>
         <tbody>
           <tr><td>One local activity</td><td>Activity details and all associated GPS route points; grass and statistics are recalculated. If account sync is enabled, its encrypted server summary is deleted on the next successful sync</td><td>Delete the activity from its detail screen in the App</td></tr>
-          <tr><td>All local data</td><td>Activities, raw routes, recovery state, grass/statistics, pending summaries, and local consent state</td><td>Android Settings → Apps → Running Timer → Storage → Clear storage, or uninstall the App</td></tr>
+          <tr><td>All local data</td><td>Activities, raw routes, recovery state, grass/statistics, body profile, step history and goal, pending summaries, and local consent state</td><td>Android Settings → Apps → Running Timer → Storage → Clear storage, or uninstall the App</td></tr>
+          <tr><td>Daily steps</td><td>Automatic step subscription, locally archived daily steps and goal; turning off collection alone retains past totals</td><td>Delete step data in the App's step-count management screen, or clear App storage/uninstall</td></tr>
           <tr><td>Advertising choices</td><td>The locally stored adult-eligibility choice and local SDK consent state</td><td>Use the App's privacy-options control when shown to revise UMP choices; clear App storage or uninstall to remove local state</td></tr>
           <tr><td>Leave leaderboard</td><td>Running Timer leaderboard consent and all Running Timer daily totals on the Haru Studio server; public rank contribution is removed</td><td>Settings → Leaderboard → Leave leaderboard, when the optional account feature is enabled</td></tr>
           <tr><td>Delete app account and server backup</td><td>Running Timer account linkage, Firebase authentication user, account-sync and leaderboard consents, encrypted activity summaries, sync history, daily leaderboard totals, and associated public rank contribution</td><td>Settings → Backup &amp; sync → Delete account &amp; server backup, when optional account sync is enabled, or use the email request below</td></tr>
@@ -84,7 +85,7 @@
       <p>We will normally acknowledge the request within 7 business days and complete verified deletion within 30 days. If applicable law permits or requires a different period, we will explain the reason and expected date. A support email may be retained for up to 30 days after completion to resolve the request, then deleted unless longer retention is legally required.</p>
 
       <h3>4. What remains after deletion</h3>
-      <p>Optional body profile fields (weight, the sex coefficient used by the equation, age in whole years and height) and calorie estimates stay on your device, not in your server account or summary backup. Delete the current profile in the body-profile settings. Earlier workouts retain the profile supplied at their start and calorie estimates until you delete those workouts, clear App storage or uninstall. Changing or deleting the current profile does not rewrite earlier workouts. Server-account deletion does not remove these local fields, and summary restore does not restore them.</p>
+      <p>Optional body profile fields (weight, the sex coefficient used by the equation, birth year and height), calculated age snapshots, calorie estimates, and daily step totals stay on your device, not in your server account or summary backup. Delete the current profile in the body-profile settings; delete steps and the optional goal in the step-count management screen. Earlier workouts retain the profile supplied at their start and calorie estimates until you delete those workouts, clear App storage or uninstall. Changing or deleting the current profile does not rewrite earlier workouts. Server-account deletion does not remove these local fields, and summary restore does not restore them.</p>
       <ul>
         <li>Our active systems retain no Running Timer account linkage, encrypted activity summary, sync history, leaderboard total, consent record, or public-code association for the deleted account.</li>
         <li>Deleted Haru Studio server records may remain in access-restricted encrypted disaster-recovery backups until the configured retention expires, currently within 7 days. They are not used for normal service operation.</li>
@@ -106,7 +107,8 @@
         <thead><tr><th>범위</th><th>삭제되는 정보</th><th>방법</th></tr></thead>
         <tbody>
           <tr><td>로컬 활동 하나</td><td>활동 상세와 연결된 모든 GPS 경로 좌표를 삭제하고 잔디와 통계를 다시 계산. 계정 동기화를 사용 중이면 다음 동기화 성공 때 암호화된 서버 요약도 삭제</td><td>앱의 활동 상세 화면에서 해당 활동 삭제</td></tr>
-          <tr><td>모든 로컬 데이터</td><td>활동, 원본 경로, 복구 상태, 잔디·통계, 전송 대기 요약과 로컬 동의 상태</td><td>Android 설정 → 앱 → Running Timer → 저장공간 → 저장공간 지우기 또는 앱 제거</td></tr>
+          <tr><td>모든 로컬 데이터</td><td>활동, 원본 경로, 복구 상태, 잔디·통계, 신체 정보, 걸음수 기록·목표, 전송 대기 요약과 로컬 동의 상태</td><td>Android 설정 → 앱 → Running Timer → 저장공간 → 저장공간 지우기 또는 앱 제거</td></tr>
+          <tr><td>매일 걸음수</td><td>자동 수집 구독, 로컬에 보관한 날짜별 걸음수와 목표. 자동 측정 끄기만으로는 과거 합계가 지워지지 않음</td><td>앱의 걸음수 관리 화면에서 기록 삭제 또는 앱 저장공간 삭제·앱 제거</td></tr>
           <tr><td>광고 선택</td><td>기기에 저장된 성인 이용 자격 선택값과 로컬 SDK 동의 상태</td><td>표시되는 경우 앱의 개인정보 옵션에서 UMP 선택을 변경하고, 로컬 상태를 지우려면 앱 저장공간을 지우거나 앱 제거</td></tr>
           <tr><td>리더보드 참여 종료</td><td>Haru Studio 서버의 Running Timer 리더보드 동의와 모든 일간 합계를 삭제하고 공개 순위 기여 제거</td><td>선택형 계정 기능 활성화 후 설정 → 리더보드 → 리더보드 참여 종료</td></tr>
           <tr><td>앱 계정 및 서버 백업 삭제</td><td>Running Timer 계정 연결, Firebase 인증 사용자, 계정 동기화·리더보드 동의, 암호화된 활동 요약, 동기화 이력, 리더보드 일간 합계와 연결된 공개 순위 기여</td><td>선택형 계정 동기화 활성화 후 설정 → 백업 및 동기화 → 계정 및 서버 백업 삭제 또는 아래 이메일 요청</td></tr>
@@ -129,7 +131,7 @@
       <p>일반적으로 영업일 기준 7일 안에 요청을 접수하고, 본인 확인이 끝난 삭제 요청은 30일 안에 완료합니다. 적용 법률이 다른 기간을 허용하거나 요구하면 이유와 예상 일자를 안내합니다. 요청 해결을 위해 지원 이메일을 완료 후 최대 30일간 보관한 뒤 삭제할 수 있으며, 법률이 더 긴 보관을 요구하는 경우는 제외합니다.</p>
 
       <h3>4. 삭제 후 남을 수 있는 정보</h3>
-      <p>선택형 신체 정보(체중·계산식의 성별 계수·정수 만 나이·키)와 추정 칼로리는 서버 계정이나 요약 백업이 아닌 기기에만 저장됩니다. 신체 정보 설정에서 현재 프로필을 삭제할 수 있습니다. 이전 운동 시작 당시 입력값과 칼로리는 해당 운동 삭제·앱 저장공간 삭제·앱 제거까지 남으며 현재 프로필 변경·삭제로 이전 기록을 덮어쓰지 않습니다. 서버 계정 삭제로 이 로컬 정보는 지워지지 않고 활동 요약 복원으로도 복원되지 않습니다.</p>
+      <p>선택형 신체 정보(체중·계산식의 성별 계수·출생연도·키), 계산 연령 스냅샷, 추정 칼로리와 날짜별 걸음수는 서버 계정이나 요약 백업이 아닌 기기에만 저장됩니다. 신체 정보 설정에서 현재 프로필을, 걸음수 관리 화면에서 기록·선택형 목표를 삭제할 수 있습니다. 이전 운동 시작 당시 입력값과 칼로리는 해당 운동 삭제·앱 저장공간 삭제·앱 제거까지 남으며 현재 프로필 변경·삭제로 이전 기록을 덮어쓰지 않습니다. 서버 계정 삭제로 이 로컬 정보는 지워지지 않고 활동 요약 복원으로도 복원되지 않습니다.</p>
       <ul>
         <li>당사의 활성 시스템에는 삭제한 계정의 Running Timer 계정 연결, 암호화된 활동 요약, 동기화 이력, 리더보드 합계, 동의 기록 또는 공개 코드 연결이 남지 않습니다.</li>
         <li>삭제된 Haru Studio 서버 기록은 설정된 보관 기간이 끝날 때까지 접근이 제한된 암호화 재해 복구 백업에 남을 수 있으며 현재 7일 이내에 만료됩니다. 일반 서비스 운영에는 사용하지 않습니다.</li>
@@ -150,7 +152,8 @@
         <thead><tr><th>範囲</th><th>削除される情報</th><th>方法</th></tr></thead>
         <tbody>
           <tr><td>ローカルの1件のアクティビティ</td><td>活動詳細と関連するすべてのGPSルートポイントを削除し、芝生と統計を再計算。アカウント同期を利用中の場合、次回の同期成功時に暗号化されたサーバー要約も削除</td><td>本アプリの活動詳細画面から削除</td></tr>
-          <tr><td>すべてのローカルデータ</td><td>活動、生のルート、復旧状態、芝生・統計、送信待ち要約、ローカル同意状態</td><td>Android設定 → アプリ → Running Timer → ストレージ → ストレージを消去、または本アプリをアンインストール</td></tr>
+          <tr><td>すべてのローカルデータ</td><td>活動、生のルート、復旧状態、芝生・統計、身体情報、歩数履歴・目標、送信待ち要約、ローカル同意状態</td><td>Android設定 → アプリ → Running Timer → ストレージ → ストレージを消去、または本アプリをアンインストール</td></tr>
+          <tr><td>毎日の歩数</td><td>自動計測の購読、端末内の日別歩数と目標。計測をオフにするだけでは過去の合計は削除されない</td><td>本アプリの歩数管理画面で履歴を削除、またはストレージを消去・アンインストール</td></tr>
           <tr><td>広告の選択</td><td>端末に保存された成人利用資格の選択とローカルSDK同意状態</td><td>表示される場合は本アプリのプライバシーオプションでUMPの選択を変更し、ローカル状態を消去するにはストレージを消去またはアンインストール</td></tr>
           <tr><td>リーダーボードから退出</td><td>Haru Studioサーバー上のRunning Timerリーダーボード同意とすべての日次合計を削除し、公開順位への貢献を除去</td><td>任意のアカウント機能が有効になった後、設定 → リーダーボード → リーダーボードから退出</td></tr>
           <tr><td>アプリアカウントとサーバーバックアップを削除</td><td>Running Timerアカウント連携、Firebase認証ユーザー、アカウント同期・リーダーボード同意、暗号化されたアクティビティ要約、同期履歴、リーダーボード日次合計、関連する公開順位への貢献</td><td>任意のアカウント機能が有効になった後、設定 → バックアップと同期 → アカウントとサーバーバックアップを削除、または下記メール</td></tr>
@@ -173,7 +176,7 @@
       <p>通常、7営業日以内に受領を連絡し、本人確認済みの削除依頼は30日以内に完了します。適用法令が別の期間を認める、または求める場合は、理由と予定日をご案内します。サポートメールは依頼解決のため、完了後最大30日保持してから削除する場合があります。ただし、法令がより長い保持を求める場合を除きます。</p>
 
       <h3>4. 削除後に残る可能性がある情報</h3>
-      <p>任意の身体情報（体重・計算式の性別係数・整数の満年齢・身長）と推定カロリーは、サーバーアカウントや要約バックアップではなく端末内のみに保存します。現在のプロフィールは身体情報設定から削除できます。過去の運動開始時の入力値とカロリーは、その運動の削除、ストレージ消去、またはアンインストールまで残り、現在のプロフィールの変更・削除では過去の記録を書き換えません。サーバーアカウントの削除ではローカル項目は消えず、要約の復元でも復元しません。</p>
+      <p>任意の身体情報（体重・計算式の性別係数・出生年・身長）、計算年齢のスナップショット、推定カロリーと日別歩数は、サーバーアカウントや要約バックアップではなく端末内のみに保存します。現在のプロフィールは身体情報設定から、歩数履歴と任意の目標は歩数管理画面から削除できます。過去の運動開始時の入力値とカロリーは、その運動の削除、ストレージ消去、またはアンインストールまで残り、現在のプロフィールの変更・削除では過去の記録を書き換えません。サーバーアカウントの削除ではローカル項目は消えず、要約の復元でも復元しません。</p>
       <ul>
         <li>当社の稼働中システムには、削除したアカウントの暗号化されたアクティビティ要約、同期履歴、リーダーボード合計、同意記録、公開コードとの関連付けは残りません。</li>
         <li>災害復旧用バックアップに残る削除済みデータは、現在7日以内に期限切れとなり、通常のサービス提供には使用されません。</li>
